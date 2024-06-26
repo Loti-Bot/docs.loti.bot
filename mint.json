@@ -18,7 +18,7 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "https://loti.dev/support"
     }
   ],
   "topbarCtaButton": {
@@ -27,7 +27,11 @@
   },
   "tabs": [
   ],
-  "anchors": [
+  "anchors": [    {
+    "name": "Home",
+    "icon": "house",
+    "url": "https://loti.dev/"
+  },
     {
       "name": "Documentation",
       "icon": "book-open-cover",
@@ -37,12 +41,8 @@
       "name": "Community",
       "icon": "slack",
       "url": "https://loti.dev/support"
-    },
-    {
-      "name": "Home",
-      "icon": "house",
-      "url": "https://loti.dev/"
     }
+ 
   ],
   "navigation": [
     {
