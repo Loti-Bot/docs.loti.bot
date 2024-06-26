@@ -1,0 +1,68 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Loti",
+  "logo": {
+    "dark": "/images/loti.jpg",
+    "light": "/images/loti.jpg"
+  },
+  "favicon": "/images/loti.jpg",
+  "colors": {
+    "primary": "#5b55a4",
+    "light": "#5b55a4",
+    "dark": "#5b55a4",
+    "anchors": {
+      "from": "#b780ff",
+      "to": "#603894"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "mailto:hi@mintlify.com"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Home",
+    "url": "https://loti.dev/"
+  },
+  "tabs": [
+  ],
+  "anchors": [
+    {
+      "name": "Documentation",
+      "icon": "book-open-cover",
+      "url": "https://docs.loti.dev/"
+    },
+    {
+      "name": "Community",
+      "icon": "slack",
+      "url": "https://loti.dev/support"
+    },
+    {
+      "name": "Home",
+      "icon": "house",
+      "url": "https://loti.dev/"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Get Started",
+      "pages": [
+        "introduction"
+      ]
+    },
+    {
+      "group": "Configuration",
+      "pages": [
+        "configuration/vanity_roles",
+        "configuration/variables",
+        "configuration/embeds"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "x": "https://x.com/TryLoti",
+    "github": "https://github.com/Loti-Dev",
+    "discord": "https://loti.dev/support"
+  }
+}
