@@ -3,7 +3,7 @@ icon: rocket
 order: 10
 ---
 
-## <Icon icon="copy" size={32} /> `;copyembed`
+
 
 ```
 ;copyembed <messageId>
@@ -11,7 +11,7 @@ order: 10
 
 ### Description
 
-The `;copyembed` command retrieves the embed code of an message with a embed attachted based on its message ID.
+Retrieve the embed code of a message with an embedded attachment based on its message ID.
 
 ### Parameters
 
@@ -19,37 +19,43 @@ The `;copyembed` command retrieves the embed code of an message with a embed att
 
 ### Usage
 
-To use the `;copyembed` command, follow the syntax provided:
+Syntax: ;copyembed (messageid)
 
-```
-;copyembed <messageId>
-```
 
-Replace `<messageId>` with the ID of the message you want to retrieve the embedded code from.
+- **Example**:
+  ```
+  ;copyembed 123456789012345678
+  ```
 
-### Example
 
-```
-;copyembed 123456789012345678
-```
 
-This command will retrieve the embed code of the embedded message with the ID `123456789012345678`.
+---
 
 ## <Icon icon="rocket" size={32} /> `;createembed`
 
+```
+;createembed {parameters}
+```
+
 ### Description
 
-The `;createmebed` command makes a embed with different parameters
+Create an embed with specified parameters.
 
-### paramenters
+### Parameters
 
-refer to [this](/variables.md) for more information on the parameters
+Refer to [this guide](/variables.md) for available parameters.
 
-### usage
+### Usage
 
-`;ce {description: Super cool embed}`
+Syntax: ;createembed {parameters}
+
+
+- **Example**:
+  ```
+  ;createembed {description: Super cool embed}
+  ```
 
 ### Notes
 
-- The message ID can be obtained by enabling Developer Mode in Discord then right-clicking on the desired message and clicking copy message id.
-- The bot must have access to view the specified message in order to retrieve its embedded content.
+- Obtain the message ID by enabling Developer Mode in Discord, right-clicking on a message, and selecting "Copy Message ID".
+- Ensure the bot has permission to view the specified message to retrieve its embedded content.

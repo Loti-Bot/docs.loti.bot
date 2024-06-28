@@ -57,13 +57,12 @@
         "configuration/vanity_roles",
         "configuration/variables",
         "configuration/embeds",
-         "configuration/anti_nuke"
+        "configuration/anti_nuke"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/TryLoti",
-    "github": "https://github.com/Loti-Dev",
+ 
     "discord": "https://loti.dev/support"
   }
 }
