@@ -56,7 +56,8 @@
       "pages": [
         "configuration/vanity_roles",
         "configuration/variables",
-        "configuration/embeds"
+        "configuration/embeds",
+         "configuration/anti_nuke"
       ]
     }
   ],
