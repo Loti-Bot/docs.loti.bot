@@ -3,100 +3,152 @@ icon: biohazard
 order: 0
 ---
 
-## Protect your server from bad actors
+## <Icon size={32} icon="shield" /> `Protect your server from bad actors`
 
+## Simple Setup
 
+`,an enable ban (can be replaced with other types)`
 
-# simple setup 
+`,an th ban 3 (sets the threshold to 3 for ban)`
 
-,an enable ban (can be replaced with other types)
+`,antinuke p ban kick (kicks the offender once the threshold is hit)`
 
+### Toggle a module in your guild's Anti-Nuke System
 
-,an threshold **3** ban  (sets the threeshold to 3 for **ban**)
-
-
-
-,antinuke do kick ban   (*kicks the offender once the threshold is hit*)
-
-
-
-,antinuke threshold 3 vanity
----
-
-Enable an anti-nuke feature
-
-**Parameters**
-
-- 'role', 'channel', 'emoji', 'ban', 'kick', 'webhook', 'vanity' or 'bot'
-
-**Usage**  
-Syntax: `,antinuke enable ('role', 'channel', 'emoji', 'ban', 'kick', 'webhook', 'vanity' or 'bot')`
-
-- **Example**:
-  ```
-  ,antinuke enable vanity
+<CodeGroup>
+  ```plaintext Syntax
+  ,antinuke toggle ('Webhook', 'Role', 'Vanity', 'Kick', 'Ban', 'Channels', 'Emojis', 'Stickers' or 'Bot')
   ```
 
----
-
-## Add or remove anti-nuke admins, allowing them to control your anti-nuke configuration.
-
-**Aliases**  
-admin, adm
-
-**Usage**  
-Syntax: `,antinuke admins`
-
-- **Example**:
+  ```plaintext Example
+  ,antinuke toggle webhook
   ```
-  ,antinuke admins add @user
-  ```
+</CodeGroup>
 
----
+**Parameters: `webhook, role, vanity, kick, ban, channels, emojis, stickers, bot`**
 
-## Set the action after a threshold has been met for an anti-nuke feature.
+**Permissions:** Anti Nuke Admin
 
-**Aliases**  
-action, punishment
+***
 
-**Parameters**
+### Remove an administrator from your anti-nuke system
 
-- 'ban', 'kick', 'warn' or 'strip', 'role', 'channel', 'emoji', 'ban', 'kick', 'webhook', 'vanity' or 'bot'
-
-**Usage**  
-Syntax: `,antinuke do ('ban', 'kick', 'warn' or 'strip') ('role', 'channel', 'emoji', 'ban', 'kick', 'webhook', 'vanity' or 'bot')`
-
-- **Example**:
-  ```
-  ,antinuke do ban vanity
+<CodeGroup>
+  ```plaintext Syntax
+  ,antinuke admin delete (target)
   ```
 
----
-
-View your current anti-nuke guild configuration.
-
-**Aliases**  
-configuration, settings, setting
-
-**Usage**  
-Syntax: `,antinuke config`
-
----
-
-## Set the threshold before punishment for an anti-nuke feature
-
-**Aliases**  
-amount, amt
-
-**Parameters**
-
-- threshold, 'role', 'channel', 'emoji', 'ban', 'kick', 'webhook', 'vanity' or 'bot'
-
-**Usage**  
-Syntax: `,antinuke threshold (threshold) ('role', 'channel', 'emoji', 'ban', 'kick', 'webhook', 'vanity' or 'bot')`
-
-- **Example**:
+  ```plaintext Example
+  ,antinuke admin delete blahja
   ```
-  ,antinuke threshold 3 vanity
+</CodeGroup>
+
+**Parameters: `User to remove`**
+
+**Permissions:** Anti Nuke Admin
+
+**Aliases:** `del, remove`
+
+***
+
+### List the administrators in your anti-nuke system
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,antinuke admin list
   ```
 
+  ```plaintext Example
+  ,antinuke admin list
+  ```
+</CodeGroup>
+
+**Permissions:** Anti Nuke Admin
+
+**Aliases:** `ls`
+
+***
+
+### Add an administrator to your anti-nuke system
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,antinuke admin add (target)
+  ```
+
+  ```plaintext Example
+  ,antinuke admin add blahja
+  ```
+</CodeGroup>
+
+**Parameters: `User to add as an anti-nuke admin.`**
+
+**Permissions:** Anti Nuke Admin
+
+**Aliases:** `create, set`
+
+***
+
+### View your guild's Anti-Nuke Configuration
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,antinuke settings
+  ```
+
+  ```plaintext Example
+  ,antinuke settings
+  ```
+</CodeGroup>
+
+**Permissions:** Anti Nuke Admin
+
+**Aliases:** `config, configuration, setting`
+
+***
+
+### Set a punishment for a module in your guild's Anti-Nuke System
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,antinuke punishment ('Webhook', 'Role', 'Vanity', 'Kick', 'Ban', 'Channels', 'Emojis', 'Stickers' or 'Bot') ('strip', 'kick' or 'ban')
+  ```
+
+  ```plaintext Example
+  ,antinuke punishment webhook strip
+  ```
+</CodeGroup>
+
+**Parameters:**
+
+**1: `webhook, role, vanity, kick, ban, channels, emojis, stickers, bot `**
+
+**2: `strip, kick, ban`**
+
+**Permissions:** Anti Nuke Admin
+
+**Aliases:** `p`
+
+***
+
+### Set a threshold for a module in your guild's Anti-Nuke System
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,antinuke threshold ('Webhook', 'Role', 'Vanity', 'Kick', 'Ban', 'Channels', 'Emojis', 'Stickers' or 'Bot') (threshold)
+  ```
+
+  ```plaintext Example
+  ,antinuke threshold webhook 5
+  ```
+</CodeGroup>
+
+**Parameters:**&#x20;
+
+**1: `webhook, role, vanity, kick, ban, channels, emojis, stickers, bot`**
+
+**2: `threshold`**
+
+**Permissions:** Anti Nuke Admin
+
+**Aliases:** `th`

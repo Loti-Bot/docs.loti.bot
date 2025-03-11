@@ -2,12 +2,17 @@
 icon: rocket
 order: 10
 ---
+## <Icon icon="rocket" size={32} /> `;embedcode`
 
+<CodeGroup>
+  ```plaintext Syntax
+  ;embedcode <messageId>
+  ```
 
-
-```
-;copyembed <messageId>
-```
+  ```plaintext Example
+  ;embedcode 123456789012345678
+  ```
+</CodeGroup>
 
 ### Description
 
@@ -15,27 +20,27 @@ Retrieve the embed code of a message with an embedded attachment based on its me
 
 ### Parameters
 
-- `<messageId>`: The unique identifier of the message containing the embedded content.
+* `<messageId>`: The unique identifier of the message containing the embedded content.
 
-### Usage
+### Notes
 
-Syntax: ;copyembed (messageid)
+* Obtain the message ID by enabling Developer Mode in Discord, right-clicking on a message, and selecting "Copy Message ID".
 
+* Ensure the bot has permission to view the specified message to retrieve its embedded content.
 
-- **Example**:
-  ```
-  ;copyembed 123456789012345678
-  ```
-
-
-
----
+***
 
 ## <Icon icon="rocket" size={32} /> `;createembed`
 
-```
-;createembed {parameters}
-```
+<CodeGroup>
+  ```plaintext Syntax
+  ;createembed {parameters}
+  ```
+
+  ```plaintext Example
+  ,createembed {message: An example embed!}{title: Embed Example}{description: Super cool embed.}{color: #9064b5}{author: {user.name} && {user.avatar}}
+  ```
+</CodeGroup>
 
 ### Description
 
@@ -44,18 +49,3 @@ Create an embed with specified parameters.
 ### Parameters
 
 Refer to [this guide](./configuration/variables.mdx) for available parameters.
-
-### Usage
-
-Syntax: ;createembed {parameters}
-
-
-- **Example**:
-  ```
-  ;createembed {description: Super cool embed}
-  ```
-
-### Notes
-
-- Obtain the message ID by enabling Developer Mode in Discord, right-clicking on a message, and selecting "Copy Message ID".
-- Ensure the bot has permission to view the specified message to retrieve its embedded content.
