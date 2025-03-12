@@ -1,0 +1,77 @@
+---
+icon: "gear"
+title: "Settings"
+description: "Make Loti more unique with Customizable Settings."
+---
+
+### Customize Emojis
+
+Modify emojis sent within Loti's Various Embeds
+
+<Warning>
+  The emoji(s) used **must be accessible** by Loti or else functions may not work.
+</Warning>
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,settings emoji ('approve', 'warning', 'error', 'paginator_previous', 'paginator_next', 'paginator_pages' or 'paginator_cancel') (emoji)
+  ```
+
+  ```plaintext Example
+  ,settings emoji approve :approve:
+  ```
+</CodeGroup>
+
+### Customize Embed Colors
+
+Modify colors sent within Loti's various Embeds
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,settings color ('approve', 'warning', 'error' or 'main') (color)
+  ```
+
+  ```plaintext Example
+  ,settings color approve #ffffff
+  ```
+</CodeGroup>
+
+### Edit Theme
+
+Select a default theme for Loti to automatically use
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,settings theme ('basic', 'loti' or 'dropdown')
+  ```
+
+  ```plaintext Example
+  ,settings theme loti
+  ```
+</CodeGroup>
+
+### Auto Transcribe
+
+Toggle Automatic Transcription of Voice Messages to Text
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,settings autotranscribe (toggle)
+  ```
+
+  ```plaintext Example
+  ,settings autotranscribe on
+  ```
+</CodeGroup>
+
+### Reset Settings
+
+<Warning>
+  This will reset all settings to their default values
+</Warning>
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,settings reset
+  ```
+</CodeGroup>

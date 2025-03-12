@@ -54,10 +54,26 @@
     {
       "group": "Configuration",
       "pages": [
+        "configuration/settings",
         "configuration/vanity_roles",
         "configuration/variables",
         "configuration/embeds",
-        "configuration/anti_nuke"
+        "configuration/anti_nuke",
+        {
+          "group": "Messages",
+          "pages": [
+            "configuration/messages/server_messages",
+            "configuration/messages/auto_responses",
+            "configuration/messages/ping_on_join",
+            "configuration/messages/sticky_messages"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Other",
+      "pages": [
+        "other/giveaways"
       ]
     }
   ],
