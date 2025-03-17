@@ -32,13 +32,9 @@
     "icon": "house",
     "url": "https://loti.dev/"
   },
+   
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://docs.loti.dev/"
-    },
-    {
-      "name": "Community",
+      "name": "Support",
       "icon": "slack",
       "url": "https://loti.dev/support"
     }
@@ -78,7 +74,8 @@
     }
   ],
   "footerSocials": {
- 
+    "github": "https://github.com/loti-dev",
+    "twitter": "https://x.com/lotibot",
     "discord": "https://loti.dev/support"
   }
 }
