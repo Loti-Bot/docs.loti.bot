@@ -55,6 +55,8 @@
         "modules/variables",
         "modules/embeds",
         "modules/anti_nuke",
+        "modules/giveaways",
+        "modules/economy",
         {
           "group": "Messages",
           "pages": [
@@ -69,8 +71,7 @@
     {
       "group": "Other",
       "pages": [
-        "other/giveaways",
-        "other/economy"
+        "other/settings"
       ]
     }
   ],
