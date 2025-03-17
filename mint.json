@@ -2,10 +2,10 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Loti",
   "logo": {
-    "dark": "/images/loti.jpg",
-    "light": "/images/loti.jpg"
+    "dark": "/assets/loti.png",
+    "light": "/assets/loti.png"
   },
-  "favicon": "/images/loti.jpg",
+  "favicon": "/assets/loti.png",
   "colors": {
     "primary": "#5b55a4",
     "light": "#5b55a4",
@@ -22,13 +22,13 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "Home",
+    "name": "Loti",
     "url": "https://loti.dev/"
   },
   "tabs": [
   ],
   "anchors": [    {
-    "name": "Home",
+    "name": "Loti",
     "icon": "house",
     "url": "https://loti.dev/"
   },

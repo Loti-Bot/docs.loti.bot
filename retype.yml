@@ -2,7 +2,7 @@ input: .
 output: .retype
 url:
 branding:
-  title: Project Name
+  title: Loti
   label: Docs
 links:
   - text: Getting Started
