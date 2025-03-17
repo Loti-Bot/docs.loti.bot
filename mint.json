@@ -48,20 +48,20 @@
       ]
     },
     {
-      "group": "Configuration",
+      "group": "Modules",
       "pages": [
-        "configuration/settings",
-        "configuration/vanity_roles",
-        "configuration/variables",
-        "configuration/embeds",
-        "configuration/anti_nuke",
+        "modules/settings",
+        "modules/vanity_roles",
+        "modules/variables",
+        "modules/embeds",
+        "modules/anti_nuke",
         {
           "group": "Messages",
           "pages": [
-            "configuration/messages/server_messages",
-            "configuration/messages/auto_responses",
-            "configuration/messages/ping_on_join",
-            "configuration/messages/sticky_messages"
+            "modules/messages/server_messages",
+            "modules/messages/auto_responses",
+            "modules/messages/ping_on_join",
+            "modules/messages/sticky_messages"
           ]
         }
       ]
