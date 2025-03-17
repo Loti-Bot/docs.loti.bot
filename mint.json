@@ -50,7 +50,7 @@
     {
       "group": "Modules",
       "pages": [
-        "modules/settings",
+      
         "modules/vanity_roles",
         "modules/variables",
         "modules/embeds",
