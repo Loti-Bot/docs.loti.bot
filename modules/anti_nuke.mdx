@@ -1,9 +1,9 @@
 ---
-icon: biohazard
-order: 0
+icon: "biohazard"
+title: "Anti-Nuke"
 ---
 
-## <Icon size={32} icon="shield" /> `Protect your server from bad actors`
+## <Icon icon="shield" size="32" /> `Protect your server from bad actors`
 
 ## Simple Setup
 
@@ -13,142 +13,149 @@ order: 0
 
 `,antinuke p ban kick (kicks the offender once the threshold is hit)`
 
-### Toggle a module in your guild's Anti-Nuke System
+### Configuration
 
-<CodeGroup>
-  ```plaintext Syntax
-  ,antinuke toggle ('Webhook', 'Role', 'Vanity', 'Kick', 'Ban', 'Channels', 'Emojis', 'Stickers' or 'Bot')
-  ```
+<AccordionGroup>
+  <Accordion title="Toggle a module in your guild's Anti-Nuke system" icon="toggle-on">
+    <CodeGroup>
 
-  ```plaintext Example
-  ,antinuke toggle webhook
-  ```
-</CodeGroup>
+    ```plaintext Syntax
+    ,antinuke toggle ('Webhook', 'Role', 'Vanity', 'Kick', 'Ban', 'Channels', 'Emojis', 'Stickers' or 'Bot')
+    ```
 
-**Parameters: `webhook, role, vanity, kick, ban, channels, emojis, stickers, bot`**
+    
+    ```plaintext Example
+    ,antinuke toggle webhook
+    ```
 
-**Permissions:** Anti Nuke Admin
+    </CodeGroup>
 
-***
+    **Parameters:** `webhook, role, vanity, kick, ban, channels, emojis, stickers, bot`
 
-### Remove an administrator from your anti-nuke system
+    **Permissions:** Anti-Nuke Admin
+  </Accordion>
+  <Accordion title="Remove an administrator from your Anti-Nuke system" icon="user-minus">
+    <CodeGroup>
 
-<CodeGroup>
-  ```plaintext Syntax
-  ,antinuke admin delete (target)
-  ```
+    ```plaintext Syntax
+    ,antinuke admin delete (target)
+    ```
 
-  ```plaintext Example
-  ,antinuke admin delete blahja
-  ```
-</CodeGroup>
+    
+    ```plaintext Example
+    ,antinuke admin delete blahja
+    ```
 
-**Parameters: `User to remove`**
+    </CodeGroup>
 
-**Permissions:** Anti Nuke Admin
+    **Parameters:** `User to remove`
 
-**Aliases:** `del, remove`
+    **Permissions:** Anti Nuke Admin
 
-***
+    **Aliases:** `del, remove`
+  </Accordion>
+  <Accordion title="List the administrators in your Anti-Nuke system" icon="users-viewfinder">
+    <CodeGroup>
 
-### List the administrators in your anti-nuke system
+    ```plaintext Syntax
+    ,antinuke admin list
+    ```
 
-<CodeGroup>
-  ```plaintext Syntax
-  ,antinuke admin list
-  ```
+    
+    ```plaintext Example
+    ,antinuke admin list
+    ```
 
-  ```plaintext Example
-  ,antinuke admin list
-  ```
-</CodeGroup>
+    </CodeGroup>
 
-**Permissions:** Anti Nuke Admin
+    **Permissions:** Anti-Nuke Admin
 
-**Aliases:** `ls`
+    **Aliases:** `ls`
+  </Accordion>
+  <Accordion title="Add an administrator to your Anti-Nuke system" icon="user-plus">
+    <CodeGroup>
 
-***
+    ```plaintext Syntax
+    ,antinuke admin add (target)
+    ```
 
-### Add an administrator to your anti-nuke system
+    
+    ```plaintext Example
+    ,antinuke admin add blahja
+    ```
 
-<CodeGroup>
-  ```plaintext Syntax
-  ,antinuke admin add (target)
-  ```
+    </CodeGroup>
 
-  ```plaintext Example
-  ,antinuke admin add blahja
-  ```
-</CodeGroup>
+    **Parameters:** `User to add as an anti-nuke admin.`
 
-**Parameters: `User to add as an anti-nuke admin.`**
+    **Permissions:** Anti-Nuke Admin
 
-**Permissions:** Anti Nuke Admin
+    **Aliases:** `create, set`
+  </Accordion>
+  <Accordion title="View your guild's Anti-Nuke Configuration" icon="gallery-thumbnails">
+    <CodeGroup>
 
-**Aliases:** `create, set`
+    ```plaintext Syntax
+    ,antinuke settings
+    ```
 
-***
+    
+    ```plaintext Example
+    ,antinuke settings
+    ```
 
-### View your guild's Anti-Nuke Configuration
+    </CodeGroup>
 
-<CodeGroup>
-  ```plaintext Syntax
-  ,antinuke settings
-  ```
+    **Permissions:** Anti-Nuke Admin
 
-  ```plaintext Example
-  ,antinuke settings
-  ```
-</CodeGroup>
+    **Aliases:** `config, configuration, setting`
+  </Accordion>
+  <Accordion title="Set a punishment for a module in your guild's Anti-Nuke system" icon="gavel">
+    <CodeGroup>
 
-**Permissions:** Anti Nuke Admin
+    ```plaintext Syntax
+    ,antinuke punishment ('Webhook', 'Role', 'Vanity', 'Kick', 'Ban', 'Channels', 'Emojis', 'Stickers' or 'Bot') ('strip', 'kick' or 'ban')
+    ```
 
-**Aliases:** `config, configuration, setting`
+    
+    ```plaintext Example
+    ,antinuke punishment webhook strip
+    ```
 
-***
+    </CodeGroup>
 
-### Set a punishment for a module in your guild's Anti-Nuke System
+    **Parameters:**
 
-<CodeGroup>
-  ```plaintext Syntax
-  ,antinuke punishment ('Webhook', 'Role', 'Vanity', 'Kick', 'Ban', 'Channels', 'Emojis', 'Stickers' or 'Bot') ('strip', 'kick' or 'ban')
-  ```
+    **1:** `webhook, role, vanity, kick, ban, channels, emojis, stickers, bot `
 
-  ```plaintext Example
-  ,antinuke punishment webhook strip
-  ```
-</CodeGroup>
+    **2:** `strip, kick, ban`
 
-**Parameters:**
+    **Permissions:** Anti-Nuke Admin
 
-**1: `webhook, role, vanity, kick, ban, channels, emojis, stickers, bot `**
+    **Aliases:** `p`
+  </Accordion>
+  <Accordion title="Set a threshold for a module in your guild's Anti-Nuke system" icon="shield-exclamation">
+    <CodeGroup>
 
-**2: `strip, kick, ban`**
+    ```plaintext Syntax
+    ,antinuke threshold ('Webhook', 'Role', 'Vanity', 'Kick', 'Ban', 'Channels', 'Emojis', 'Stickers' or 'Bot') (threshold)
+    ```
 
-**Permissions:** Anti Nuke Admin
+    
+    ```plaintext Example
+    ,antinuke threshold webhook 5
+    ```
 
-**Aliases:** `p`
+    </CodeGroup>
 
-***
+    **Parameters:**;
 
-### Set a threshold for a module in your guild's Anti-Nuke System
+    **1:** `webhook, role, vanity, kick, ban, channels, emojis, stickers, bot`
 
-<CodeGroup>
-  ```plaintext Syntax
-  ,antinuke threshold ('Webhook', 'Role', 'Vanity', 'Kick', 'Ban', 'Channels', 'Emojis', 'Stickers' or 'Bot') (threshold)
-  ```
+    **2:** `threshold`
 
-  ```plaintext Example
-  ,antinuke threshold webhook 5
-  ```
-</CodeGroup>
+    **Permissions:** Anti Nuke Admin
 
-**Parameters:**&#x20;
-
-**1: `webhook, role, vanity, kick, ban, channels, emojis, stickers, bot`**
-
-**2: `threshold`**
-
-**Permissions:** Anti Nuke Admin
-
-**Aliases:** `th`
+    **Aliases:** `th`
+  </Accordion>
+</AccordionGroup>
