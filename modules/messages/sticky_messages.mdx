@@ -1,0 +1,49 @@
+---
+icon: "note-sticky"
+title: "Sticky Messages"
+description: "Set a sticky message in a channel."
+---
+
+### Create a Sticky Message
+
+<Tip>
+  An [embed](https://docs.loti.dev/configuration/embeds) can also be used!
+</Tip>
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,sticky add (channel) (message)
+  ```
+
+  ```plaintext Example
+  ,sticky add #general Make sure to collect your roles!
+  ```
+
+  ```plaintext Example with Embed
+  ,sticky add #general {embed}{description: Make sure to collect your roles!}
+  ```
+</CodeGroup>
+
+### View a Sticky Message
+
+<Tip>
+  The identifier can be found by using \`,sticky list\` and using the number specified.
+</Tip>
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,sticky view (identifier)
+  ```
+
+  ```plaintext Example
+  ,sticky view 1
+  ```
+</CodeGroup>
+
+### List the Sticky Messages
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,sticky list
+  ```
+</CodeGroup>

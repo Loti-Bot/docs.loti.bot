@@ -2,10 +2,10 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Loti",
   "logo": {
-    "dark": "/images/loti.jpg",
-    "light": "/images/loti.jpg"
+    "dark": "/assets/loti.png",
+    "light": "/assets/loti.png"
   },
-  "favicon": "/images/loti.jpg",
+  "favicon": "/assets/loti.png",
   "colors": {
     "primary": "#5b55a4",
     "light": "#5b55a4",
@@ -22,23 +22,19 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "Home",
+    "name": "Loti",
     "url": "https://loti.dev/"
   },
   "tabs": [
   ],
   "anchors": [    {
-    "name": "Home",
+    "name": "Loti",
     "icon": "house",
     "url": "https://loti.dev/"
   },
+   
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://docs.loti.dev/"
-    },
-    {
-      "name": "Community",
+      "name": "Support",
       "icon": "slack",
       "url": "https://loti.dev/support"
     }
@@ -52,17 +48,36 @@
       ]
     },
     {
-      "group": "Configuration",
+      "group": "Modules",
       "pages": [
-        "configuration/vanity_roles",
-        "configuration/variables",
-        "configuration/embeds",
-        "configuration/anti_nuke"
+      
+        "modules/vanity_roles",
+        "modules/variables",
+        "modules/embeds",
+        "modules/anti_nuke",
+        "modules/giveaways",
+        "modules/economy",
+        {
+          "group": "Messages",
+          "pages": [
+            "modules/messages/server_messages",
+            "modules/messages/auto_responses",
+            "modules/messages/ping_on_join",
+            "modules/messages/sticky_messages"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Other",
+      "pages": [
+        "other/settings"
       ]
     }
   ],
   "footerSocials": {
- 
+    "github": "https://github.com/loti-dev",
+    "twitter": "https://x.com/lotibot",
     "discord": "https://loti.dev/support"
   }
 }

@@ -1,0 +1,56 @@
+---
+icon: code
+order: 0
+---
+
+| **General** | **Description**                                  |
+| ----------- | ------------------------------------------------ |
+| `{prefix}`  | Shows the bot's command prefix (e.g., '!', '?'). |
+
+<Tabs>
+  <Tab title="Guild Specific">
+    | **Guild (Server) Specific**                                         | **Description**                                          |   |
+    | ------------------------------------------------------------------- | -------------------------------------------------------- | - |
+    | `{server}`, `{guild}`                                               | The name of the Discord server.                          |   |
+    | `{server.name}`, `{guild.name}`                                     | The name of the Discord server.                          |   |
+    | `{server.id}`, `{guild.id}`                                         | The ID of the Discord server.                            |   |
+    | `{server.owner}`, `{guild.owner}`                                   | The name/nickname of the Discord server's owner.         |   |
+    | `{server.owner.id}`, `{guild.owner.id}`                             | The ID of the Discord server's owner.                    |   |
+    | `{server.owner.mention}`, `{guild.owner.mention}`                   | mentions the Discord server's owner.                     |   |
+    | `{server.owner.avatar}`, `{guild.owner.avatar}`                     | displays to the avatar of the server owner.              |   |
+    | `{server.icon}`, `{guild.icon}`                                     | displays to the Discord server's icon image.             |   |
+    | `{server.icon.url}`, `{guild.icon.url}`                             | displays the Discord server's icon image.                |   |
+    | `{server.banner}`, `{guild.banner}`                                 | displays the Discord server's banner image (if any).     |   |
+    | `{server.member_count}`, `{guild.member_count}`                     | The total member count of the Discord server.            |   |
+    | `{server.member_count.formatted}`, `{guild.member_count.formatted}` | Formatted total member count of the server.              |   |
+    | `{server.boost_count}`, `{guild.boost_count}`                       | The number of boosts the Discord server has.             |   |
+    | `{server.boost_tier}`, `{guild.boost_tier}`                         | The boost tier of the Discord server.                    |   |
+    | `{server.created_at}`, `{guild.created_at}`                         | The creation date of the Discord server, formatted.      |   |
+    | `{server.vanity}`, `{guild.vanity}`                                 | The vanity of the Discord server (or "none" if not set). |   |
+  </Tab>
+
+  <Tab title="User Specific">
+    | **User (Command) Specific** | **Description**                                          |
+    | --------------------------- | -------------------------------------------------------- |
+    | `{user}`                    | A mention for the user.                                  |
+    | `{user.mention}`            | A mention tag for the user.                              |
+    | `{user.name}`               | The username of the user.                                |
+    | `{user.id}`                 | The ID of the user.                                      |
+    | `{user.avatar}`             | URL link to the user's avatar image.                     |
+    | `{user.joined_at}`          | The date and time the user joined the server, formatted. |
+  </Tab>
+</Tabs>
+
+## Embed Maker Variables
+
+| **Variable**                                                                | **Description**                                                            |
+| --------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| Message Content (Optional): `{message: Message Content!}`                   | Specifies the content of the message.                                      |
+| Title: `{title: Embed Test}`                                                | Specifies the title of the embed.                                          |
+| Description: `{description: Embed Test}`                                    | Specifies the description of the embed.                                    |
+| Color (Optional): `{color: [Hex Color Code]}`                               | Sets the color of the embed using a hexadecimal color code.                |
+| Author (Optional): `{author: Embed Test && loti.dev && [Author Image URL]}` | Sets the author field of the embed, including name and optional image URL. |
+| Footer (Optional): `{footer: Embed Test && [Footer Image URL]}`             | Sets the footer text and optional footer image URL of the embed.           |
+| Image (Optional): `{image: [Image URL]}`                                    | Sets the main image URL of the embed.                                      |
+| Thumbnail (Optional): `{thumbnail: [Thumbnail Image URL]}`                  | Sets the thumbnail image URL of the embed.                                 |
+| Fields: `{field: [Name] && [Value] && [Inline (if true)]}`                  | Adds a field to the embed with specified name, value, and inline status.   |

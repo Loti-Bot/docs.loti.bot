@@ -1,0 +1,161 @@
+---
+icon: "biohazard"
+title: "Anti-Nuke"
+---
+
+## <Icon icon="shield" size={32} /> `Protect your server from bad actors`
+
+## Simple Setup
+
+`,an enable ban (can be replaced with other types)`
+
+`,an th ban 3 (sets the threshold to 3 for ban)`
+
+`,antinuke p ban kick (kicks the offender once the threshold is hit)`
+
+### Configuration
+
+<AccordionGroup>
+  <Accordion title="Toggle a module in your guild's Anti-Nuke system" icon="toggle-on">
+    <CodeGroup>
+
+    ```plaintext Syntax
+    ,antinuke toggle ('Webhook', 'Role', 'Vanity', 'Kick', 'Ban', 'Channels', 'Emojis', 'Stickers' or 'Bot')
+    ```
+
+    
+    ```plaintext Example
+    ,antinuke toggle webhook
+    ```
+
+    </CodeGroup>
+
+    **Parameters:** `webhook, role, vanity, kick, ban, channels, emojis, stickers, bot`
+
+    **Permissions:** Anti-Nuke Admin
+  </Accordion>
+  <Accordion title="Remove an administrator from your Anti-Nuke system" icon="user-minus">
+    <CodeGroup>
+
+    ```plaintext Syntax
+    ,antinuke admin delete (target)
+    ```
+
+    
+    ```plaintext Example
+    ,antinuke admin delete blahja
+    ```
+
+    </CodeGroup>
+
+    **Parameters:** `User to remove`
+
+    **Permissions:** Anti Nuke Admin
+
+    **Aliases:** `del, remove`
+  </Accordion>
+  <Accordion title="List the administrators in your Anti-Nuke system" icon="users-viewfinder">
+    <CodeGroup>
+
+    ```plaintext Syntax
+    ,antinuke admin list
+    ```
+
+    
+    ```plaintext Example
+    ,antinuke admin list
+    ```
+
+    </CodeGroup>
+
+    **Permissions:** Anti-Nuke Admin
+
+    **Aliases:** `ls`
+  </Accordion>
+  <Accordion title="Add an administrator to your Anti-Nuke system" icon="user-plus">
+    <CodeGroup>
+
+    ```plaintext Syntax
+    ,antinuke admin add (target)
+    ```
+
+    
+    ```plaintext Example
+    ,antinuke admin add blahja
+    ```
+
+    </CodeGroup>
+
+    **Parameters:** `User to add as an anti-nuke admin.`
+
+    **Permissions:** Anti-Nuke Admin
+
+    **Aliases:** `create, set`
+  </Accordion>
+  <Accordion title="View your guild's Anti-Nuke Configuration" icon="gallery-thumbnails">
+    <CodeGroup>
+
+    ```plaintext Syntax
+    ,antinuke settings
+    ```
+
+    
+    ```plaintext Example
+    ,antinuke settings
+    ```
+
+    </CodeGroup>
+
+    **Permissions:** Anti-Nuke Admin
+
+    **Aliases:** `config, configuration, setting`
+  </Accordion>
+  <Accordion title="Set a punishment for a module in your guild's Anti-Nuke system" icon="gavel">
+    <CodeGroup>
+
+    ```plaintext Syntax
+    ,antinuke punishment ('Webhook', 'Role', 'Vanity', 'Kick', 'Ban', 'Channels', 'Emojis', 'Stickers' or 'Bot') ('strip', 'kick' or 'ban')
+    ```
+
+    
+    ```plaintext Example
+    ,antinuke punishment webhook strip
+    ```
+
+    </CodeGroup>
+
+    **Parameters:**
+
+    **1:** `webhook, role, vanity, kick, ban, channels, emojis, stickers, bot `
+
+    **2:** `strip, kick, ban`
+
+    **Permissions:** Anti-Nuke Admin
+
+    **Aliases:** `p`
+  </Accordion>
+  <Accordion title="Set a threshold for a module in your guild's Anti-Nuke system" icon="shield-exclamation">
+    <CodeGroup>
+
+    ```plaintext Syntax
+    ,antinuke threshold ('Webhook', 'Role', 'Vanity', 'Kick', 'Ban', 'Channels', 'Emojis', 'Stickers' or 'Bot') (threshold)
+    ```
+
+    
+    ```plaintext Example
+    ,antinuke threshold webhook 5
+    ```
+
+    </CodeGroup>
+
+    **Parameters:**;
+
+    **1:** `webhook, role, vanity, kick, ban, channels, emojis, stickers, bot`
+
+    **2:** `threshold`
+
+    **Permissions:** Anti Nuke Admin
+
+    **Aliases:** `th`
+  </Accordion>
+</AccordionGroup>
