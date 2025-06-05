@@ -1,0 +1,87 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "almond",
+  "name": "Loti",
+  "colors": {
+    "primary": "#5b55a4",
+    "light": "#5b55a4",
+    "dark": "#5b55a4"
+  },
+  "favicon": "/assets/loti.png",
+  "navigation": {
+    "anchors": [
+      {
+        "anchor": "Documentation",
+        "icon": "book-open",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["introduction"]
+          },
+          {
+            "group": "Modules",
+            "pages": [
+              "modules/vanity_roles",
+              "modules/variables",
+              "modules/embeds",
+              "modules/anti_nuke",
+              "modules/giveaways",
+              "modules/economy",
+              {
+                "group": "Messages",
+                "pages": [
+                  "modules/messages/server_messages",
+                  "modules/messages/auto_responses",
+                  "modules/messages/ping_on_join",
+                  "modules/messages/sticky_messages"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Other",
+            "pages": ["other/settings"]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Loti",
+          "href": "https://loti.dev/",
+          "icon": "house"
+        },
+        {
+          "anchor": "Support",
+          "href": "https://loti.dev/support",
+          "icon": "slack"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "light": "/assets/loti.png",
+    "dark": "/assets/loti.png"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "https://loti.dev/support"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Loti",
+      "href": "https://loti.dev/"
+    }
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/loti-dev",
+      "twitter": "https://x.com/lotibot",
+      "discord": "https://loti.dev/support"
+    }
+  }
+}
