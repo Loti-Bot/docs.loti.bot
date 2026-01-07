@@ -49,12 +49,12 @@
       "anchors": [
         {
           "anchor": "Loti",
-          "href": "https://loti.dev/",
+          "href": "https://loti.bot/",
           "icon": "house"
         },
         {
-          "anchor": "Support",
-          "href": "https://loti.dev/support",
+          "anchor": "Support Invite",
+          "href": "https://loti.bot/support",
           "icon": "slack"
         }
       ]
@@ -68,20 +68,20 @@
     "links": [
       {
         "label": "Support",
-        "href": "https://loti.dev/support"
+        "href": "https://loti.bot/support"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Loti",
-      "href": "https://loti.dev/"
+      "href": "https://loti.bot/"
     }
   },
   "footer": {
     "socials": {
-      "github": "https://github.com/loti-dev",
+      "github": "https://github.com/loti-bot",
       "twitter": "https://x.com/lotibot",
-      "discord": "https://loti.dev/support"
+      "discord": "https://loti.bot/support"
     }
   }
 }
