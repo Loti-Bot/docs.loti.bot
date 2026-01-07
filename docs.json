@@ -40,62 +40,117 @@
         ]
       },
       {
-        
-          "language": "es",
-          "groups": [
-            {
-              "group": "Get Started",
-              "pages": ["es/introduction"]
-            },
-            {
-              "group": "Modules",
-              "pages": [
-                "es/modules/vanity_roles",
-                "es/modules/variables",
-                "es/modules/embeds",
-                "es/modules/anti_nuke",
-                "es/modules/giveaways",
-                "es/modules/economy",
-                "es/modules/messages/server_messages",
-                "es/modules/messages/auto_responses",
-                "es/modules/messages/ping_on_join",
-                "es/modules/messages/sticky_messages"
-              ]
-            },
-            {
-              "group": "Other",
-              "pages": ["es/other/settings"]
-            }
-          ]
-        },
-        {
-          "language": "de",
-          "groups": [
-            {
-              "group": "Get Started",
-              "pages": ["de/introduction"]
-            },
-            {
-              "group": "Modules",
-              "pages": [
-                "de/modules/vanity_roles",
-                "de/modules/variables",
-                "de/modules/embeds",
-                "de/modules/anti_nuke",
-                "de/modules/giveaways",
-                "de/modules/economy",
-                "de/modules/messages/server_messages",
-                "de/modules/messages/auto_responses",
-                "de/modules/messages/ping_on_join",
-                "de/modules/messages/sticky_messages"
-              ]
-            },
-            {
-              "group": "Other",
-              "pages": ["de/other/settings"]
-            }
-          ]
-        },
+        "language": "es",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["es/introduction"]
+          },
+          {
+            "group": "Modules",
+            "pages": [
+              "es/modules/vanity_roles",
+              "es/modules/variables",
+              "es/modules/embeds",
+              "es/modules/anti_nuke",
+              "es/modules/giveaways",
+              "es/modules/economy",
+              "es/modules/messages/server_messages",
+              "es/modules/messages/auto_responses",
+              "es/modules/messages/ping_on_join",
+              "es/modules/messages/sticky_messages"
+            ]
+          },
+          {
+            "group": "Other",
+            "pages": ["es/other/settings"]
+          }
+        ]
+      },
+      {
+        "language": "de",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["de/introduction"]
+          },
+          {
+            "group": "Modules",
+            "pages": [
+              "de/modules/vanity_roles",
+              "de/modules/variables",
+              "de/modules/embeds",
+              "de/modules/anti_nuke",
+              "de/modules/giveaways",
+              "de/modules/economy",
+              "de/modules/messages/server_messages",
+              "de/modules/messages/auto_responses",
+              "de/modules/messages/ping_on_join",
+              "de/modules/messages/sticky_messages"
+            ]
+          },
+          {
+            "group": "Other",
+            "pages": ["de/other/settings"]
+          }
+        ]
+      },
+      {
+        "language": "fr",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["fr/introduction"]
+          },
+          {
+            "group": "Modules",
+            "pages": [
+              "fr/modules/vanity_roles",
+              "fr/modules/variables",
+              "fr/modules/embeds",
+              "fr/modules/anti_nuke",
+              "fr/modules/giveaways",
+              "fr/modules/economy",
+              "fr/modules/messages/server_messages",
+              "fr/modules/messages/auto_responses",
+              "fr/modules/messages/ping_on_join",
+              "fr/modules/messages/sticky_messages"
+            ]
+          },
+          {
+            "group": "Other",
+            "pages": ["fr/other/settings"]
+          }
+        ]
+      },
+      {
+        "language": "ru",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["ru/introduction"]
+          },
+          {
+            "group": "Modules",
+            "pages": [
+              "ru/modules/vanity_roles",
+              "ru/modules/variables",
+              "ru/modules/embeds",
+              "ru/modules/anti_nuke",
+              "ru/modules/giveaways",
+              "ru/modules/economy",
+              "ru/modules/messages/server_messages",
+              "ru/modules/messages/auto_responses",
+              "ru/modules/messages/ping_on_join",
+              "ru/modules/messages/sticky_messages"
+            ]
+          },
+          {
+            "group": "Other",
+            "pages": ["ru/other/settings"]
+          }
+        ]
+      },
       {
         "language": "ar",
         "groups": [

@@ -1,0 +1,46 @@
+---
+icon: rocket
+order: 10
+---
+## <Icon icon="rocket" size={32} /> `;embedcode`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ;embedcode <messageId>
+  ```
+
+  ```plaintext Example
+  ;embedcode 123456789012345678
+  ```
+</CodeGroup>
+
+### Description
+
+Retrieve the embed code for an message.
+
+### Parameters
+
+* `<messageId>`: The unique identifier of the message containing the embedded content.
+## <Icon icon="gear-code" size={32} /> Getting the message ID
+
+Obtain the message ID by enabling Developer Mode in Discord, right-clicking on the message, and selecting “Copy Message ID”.
+## <Icon icon="rocket" size={32} /> `;createembed`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ;createembed {parameters}
+  ```
+
+  ```plaintext Example
+  ,createembed {message: An example embed!}{title: Embed Example}{description: Super cool embed.}{color: #9064b5}{author: {user.name} && {user.avatar}}
+  ```
+</CodeGroup>
+
+### Description
+
+Create an embed with specified parameters.
+
+### Parameters
+
+Refer to [this guide](./configuration/variables.mdx) for available parameters.
+or use [this](https://embed.loti.bot) embed generator to create your embed.
