@@ -79,9 +79,15 @@
   },
   "footer": {
     "socials": {
-      "github": "https://github.com/loti-bot",
+      "github": "https://github.com/loti-bot/docs.loti.bot",
       "twitter": "https://x.com/lotibot",
       "discord": "https://loti.bot/support"
+    }
+  },
+  "errors": {
+    "404": {
+      "redirect": true
+      
     }
   }
 }

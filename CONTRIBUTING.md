@@ -16,9 +16,9 @@ Create a descriptive branch in your fork before opening a PR on main. Examples:
 - Components: keep `<Tip>`/`<Info>` to two sentences; use `<CardGroup>/<Card>` for multiple links and `<Tabs>/<Tab>` for comparisons.
 
 - Formatting: leave blank lines between bullets, document options under `### Parameters` with bolded names, and build tables with pipes, hyphens, and bold headers.
-- Links: prefer relative paths (for example, `./variables`) and name the command plus notable flags or other relevant info.
+- Links: prefer root relative paths (for example, `./variables`)include notable info
 
-## Starter Snippet
+## Snippet for a new doc
 
 ````mdx
 ---
@@ -27,6 +27,8 @@ order: 0
 title: "Feature Name"
 description: "Short summary for navigation."
 ---
+
+find more info via https://www.mintlify.com/docs/
 
 ## <Icon icon="shield" size={32} /> `,command`
 
