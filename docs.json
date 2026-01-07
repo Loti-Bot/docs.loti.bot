@@ -3,66 +3,128 @@
   "theme": "almond",
   "name": "Loti",
   "colors": {
-    "primary": "#5b55a4",
-    "light": "#5b55a4",
-    "dark": "#5b55a4"
+    "primary": "#5b55a4"
   },
-  "favicon": "/assets/loti.png",
+  "logo": {
+    "light": "./assets/loti.png",
+    "dark": "./assets/loti.png"
+  },
   "navigation": {
-    "anchors": [
+    "languages": [
       {
-        "anchor": "Documentation",
-        "icon": "book-open",
+        "language": "en",
         "groups": [
           {
             "group": "Get Started",
-            "pages": ["introduction"]
+            "pages": ["en/introduction"]
           },
           {
             "group": "Modules",
             "pages": [
-              "modules/vanity_roles",
-              "modules/variables",
-              "modules/embeds",
-              "modules/anti_nuke",
-              "modules/giveaways",
-              "modules/economy",
-              {
-                "group": "Messages",
-                "pages": [
-                  "modules/messages/server_messages",
-                  "modules/messages/auto_responses",
-                  "modules/messages/ping_on_join",
-                  "modules/messages/sticky_messages"
-                ]
-              }
+              "en/modules/vanity_roles",
+              "en/modules/variables",
+              "en/modules/embeds",
+              "en/modules/anti_nuke",
+              "en/modules/giveaways",
+              "en/modules/economy",
+              "en/modules/messages/server_messages",
+              "en/modules/messages/auto_responses",
+              "en/modules/messages/ping_on_join",
+              "en/modules/messages/sticky_messages"
             ]
           },
           {
             "group": "Other",
-            "pages": ["other/settings"]
+            "pages": ["en/other/settings"]
+          }
+        ]
+      },
+      {
+        
+          "language": "es",
+          "groups": [
+            {
+              "group": "Get Started",
+              "pages": ["es/introduction"]
+            },
+            {
+              "group": "Modules",
+              "pages": [
+                "es/modules/vanity_roles",
+                "es/modules/variables",
+                "es/modules/embeds",
+                "es/modules/anti_nuke",
+                "es/modules/giveaways",
+                "es/modules/economy",
+                "es/modules/messages/server_messages",
+                "es/modules/messages/auto_responses",
+                "es/modules/messages/ping_on_join",
+                "es/modules/messages/sticky_messages"
+              ]
+            },
+            {
+              "group": "Other",
+              "pages": ["es/other/settings"]
+            }
+          ]
+        },
+        {
+          "language": "de",
+          "groups": [
+            {
+              "group": "Get Started",
+              "pages": ["de/introduction"]
+            },
+            {
+              "group": "Modules",
+              "pages": [
+                "de/modules/vanity_roles",
+                "de/modules/variables",
+                "de/modules/embeds",
+                "de/modules/anti_nuke",
+                "de/modules/giveaways",
+                "de/modules/economy",
+                "de/modules/messages/server_messages",
+                "de/modules/messages/auto_responses",
+                "de/modules/messages/ping_on_join",
+                "de/modules/messages/sticky_messages"
+              ]
+            },
+            {
+              "group": "Other",
+              "pages": ["de/other/settings"]
+            }
+          ]
+        },
+      {
+        "language": "ar",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["ar/introduction"]
+          },
+          {
+            "group": "Modules",
+            "pages": [
+              "ar/modules/vanity_roles",
+              "ar/modules/variables",
+              "ar/modules/embeds",
+              "ar/modules/anti_nuke",
+              "ar/modules/giveaways",
+              "ar/modules/economy",
+              "ar/modules/messages/server_messages",
+              "ar/modules/messages/auto_responses",
+              "ar/modules/messages/ping_on_join",
+              "ar/modules/messages/sticky_messages"
+            ]
+          },
+          {
+            "group": "Other",
+            "pages": ["ar/other/settings"]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Loti",
-          "href": "https://loti.bot/",
-          "icon": "house"
-        },
-        {
-          "anchor": "Support Invite",
-          "href": "https://loti.bot/support",
-          "icon": "slack"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/assets/loti.png",
-    "dark": "/assets/loti.png"
+    ]
   },
   "navbar": {
     "links": [
@@ -84,10 +146,23 @@
       "discord": "https://loti.bot/support"
     }
   },
+  "global": {
+    "anchors": [
+      {
+        "anchor": "Loti",
+        "href": "https://loti.bot/",
+        "icon": "house"
+      },
+      {
+        "anchor": "Support Invite",
+        "href": "https://loti.bot/support",
+        "icon": "slack"
+      }
+    ]
+  },
   "errors": {
     "404": {
       "redirect": true
-      
     }
   }
 }

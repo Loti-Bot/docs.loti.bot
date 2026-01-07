@@ -1,0 +1,107 @@
+---
+icon: "messages"
+title: "Server Messages"
+description: "Send messages when events within the server occur."
+---
+
+## Events
+
+The following events can trigger a response.
+
+* `boost` - Triggered when a user **boosts** the guild.
+
+* `welcome` - Triggered when a user **joins** the guild.
+
+* `goodbye` - Triggered when a user **leaves** the guild.
+
+## Commands
+
+<Tip>
+  An [embed](https://docs.loti.bot/configuration/embeds) with [variables](https://docs.loti.bot/configuration/variables) can also be used!
+</Tip>
+
+### Creating a booster message
+
+Setup your custom booster message.
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,boostmessage setup (channel) (message)
+  ```
+
+  ```plaintext Example
+  ,boostmessage setup #general thanks for boosting!
+  ```
+</CodeGroup>
+
+### Removing a booster message
+
+Removes the booster message.
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,boostmessage remove
+  ```
+</CodeGroup>
+
+### Testing the booster message
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,boostmessage test
+  ```
+</CodeGroup>
+
+<Info>
+  The examples below use the `welcome`command, but the same format applies to the `goodbye `command.
+</Info>
+
+### Adding a welcome message
+
+Add a welcome message for a channel
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,welcome add (channel) (message)
+  ```
+
+  ```plaintext Example
+  ,welcome add #welc {embed}{description: Welcome to the server {user.mention}}
+  ```
+</CodeGroup>
+
+### Deleting a welcome message
+
+<Tip>
+  The identifier can be found by using `,welcome list` and using the number specified.
+</Tip>
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,welcome delete (identifier)
+  ```
+
+  ```plaintext Example
+  ,welcome delete 1
+  ```
+</CodeGroup>
+
+### Viewing the set welcome message for a channel
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,welcome view (channel)
+  ```
+
+  ```plaintext Example
+  ,welcome view #general
+  ```
+</CodeGroup>
+
+### List all the welcome messages in the guild
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,welcome list
+  ```
+</CodeGroup>

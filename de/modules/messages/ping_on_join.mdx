@@ -1,0 +1,48 @@
+---
+icon: "bell"
+title: "Ping on Join"
+description: "Ping users when they join your server!"
+order: 0
+---
+
+### Creating a Ping on Join
+
+Add ping on join in a channel
+
+<CodeGroup>
+  ```javascript Syntax
+  ,pingonjoin add (channel)
+  ```
+
+  ```javascript Example
+  ,pingonjoin add #welc
+  ```
+</CodeGroup>
+
+### Removing a Ping on Join
+
+Remove a ping on join from the specified channel.
+
+<Info>
+  The identifier can be found by using `,poj list` and using the number specified.
+</Info>
+
+<CodeGroup>
+  ```javascript Syntax
+  ,pingonjoin remove (identifier)
+  ```
+
+  ```javascript Example
+  ,pingonjoin remove 1
+  ```
+</CodeGroup>
+
+### List the Ping on Join's in a guild
+
+List all the ping on join's set in the guild.
+
+<CodeGroup>
+  ```javascript Syntax
+  ,pingonjoin list
+  ```
+</CodeGroup>
