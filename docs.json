@@ -27,7 +27,10 @@
                   "modules/server/VanityRewards",
                   "modules/server/giveaways",
                   "modules/server/Starboard",
-                  "modules/server/Partnership"
+                  "modules/server/Partnership",
+                                    "modules/server/tickets"
+
+                  
                 ]
               },
               {

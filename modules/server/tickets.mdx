@@ -1,0 +1,311 @@
+---
+icon: ticket
+order: 0
+title: "Tickets"
+---
+
+
+### Description
+
+Manage ticket categories, panels, staff, logs, and blacklists.
+
+### `tickets send`
+
+<CodeGroup>
+	```plaintext Syntax
+	,tickets send <channel>
+	```
+
+	```plaintext Example
+	,tickets send #tickets
+	```
+</CodeGroup>
+
+- Send the ticket panel in a channel.
+- **Arguments**: `channel`
+- **Permissions**: Manage Guild
+
+### `tickets category`
+
+<CodeGroup>
+	```plaintext Syntax
+	,tickets category
+	```
+
+	```plaintext Example
+	,tickets category
+	```
+</CodeGroup>
+
+- Create, list, and modify ticket categories.
+- **Alias**: `cat`
+- **Arguments**: None
+- **Permissions**: Manage Guild
+
+### `tickets category opened`
+
+<CodeGroup>
+	```plaintext Syntax
+	,tickets category opened <categorycode>
+	```
+
+	```plaintext Example
+	,tickets category opened promo
+	```
+</CodeGroup>
+
+- Set the opened-ticket script for a category.
+- **Alias**: `open`
+- **Arguments**: `categorycode`
+- **Permissions**: Manage Guild
+
+### `tickets category remove`
+
+<CodeGroup>
+	```plaintext Syntax
+	,tickets category remove <name>
+	```
+
+	```plaintext Example
+	,tickets category remove Promo
+	```
+</CodeGroup>
+
+- Remove a ticket category.
+- **Alias**: `rm`
+- **Arguments**: `name`
+- **Permissions**: Manage Guild
+
+### `tickets category create`
+
+<CodeGroup>
+	```plaintext Syntax
+	,tickets category create <nameemoji>
+	```
+
+	```plaintext Example
+	,tickets category create "Support🛠"
+	```
+</CodeGroup>
+
+- Create a ticket category and button entry.
+- **Alias**: `make`
+- **Arguments**: `nameemoji`
+- **Permissions**: Manage Guild
+
+### `tickets category list`
+
+<CodeGroup>
+	```plaintext Syntax
+	,tickets category list
+	```
+
+	```plaintext Example
+	,tickets category list
+	```
+</CodeGroup>
+
+- List all ticket categories for this server.
+- **Alias**: `ls`
+- **Arguments**: None
+- **Permissions**: Manage Guild
+
+### `tickets message`
+
+<CodeGroup>
+	```plaintext Syntax
+	,tickets message <code>
+	```
+
+	```plaintext Example
+	,tickets message panel01
+	```
+</CodeGroup>
+
+- Modify the ticket panel message script.
+- **Aliases**: `view`, `messages`
+- **Arguments**: `code`
+- **Permissions**: Manage Guild
+
+### `tickets message view`
+
+<CodeGroup>
+	```plaintext Syntax
+	,tickets message view
+	```
+
+	```plaintext Example
+	,tickets message view
+	```
+</CodeGroup>
+
+- Preview the stored ticket panel message.
+- **Alias**: `see`
+- **Arguments**: None
+- **Permissions**: Manage Guild
+
+### `tickets blacklist`
+
+<CodeGroup>
+	```plaintext Syntax
+	,tickets blacklist
+	```
+
+	```plaintext Example
+	,tickets blacklist
+	```
+</CodeGroup>
+
+- Block users from opening new tickets.
+- **Alias**: `bl`
+- **Arguments**: None
+- **Permissions**: Manage Guild
+
+### `tickets blacklist add`
+
+<CodeGroup>
+	```plaintext Syntax
+	,tickets blacklist add <user>
+	```
+
+	```plaintext Example
+	,tickets blacklist add @TroubleMaker
+	```
+</CodeGroup>
+
+- Blacklist a user from opening tickets.
+- **Arguments**: `user`
+- **Permissions**: Manage Guild
+
+### `tickets blacklist remove`
+
+<CodeGroup>
+	```plaintext Syntax
+	,tickets blacklist remove <user>
+	```
+
+	```plaintext Example
+	,tickets blacklist remove @TroubleMaker
+	```
+</CodeGroup>
+
+- Remove a user from the ticket blacklist.
+- **Aliases**: `rm`, `delete`
+- **Arguments**: `user`
+- **Permissions**: Manage Guild
+
+### `tickets blacklist list`
+
+<CodeGroup>
+	```plaintext Syntax
+	,tickets blacklist list
+	```
+
+	```plaintext Example
+	,tickets blacklist list
+	```
+</CodeGroup>
+
+- List users blacklisted from opening tickets.
+- **Alias**: `ls`
+- **Arguments**: None
+- **Permissions**: Manage Guild
+
+### `tickets log`
+
+<CodeGroup>
+	```plaintext Syntax
+	,tickets log <channel>
+	```
+
+	```plaintext Example
+	,tickets log #ticket-logs
+	```
+</CodeGroup>
+
+- Set the ticket transcript log channel.
+- **Arguments**: `channel`
+- **Permissions**: Manage Guild
+
+### `tickets staff`
+
+<CodeGroup>
+	```plaintext Syntax
+	,tickets staff
+	```
+
+	```plaintext Example
+	,tickets staff
+	```
+</CodeGroup>
+
+- Manage ticket staff who can view and close tickets.
+- **Arguments**: None
+- **Permissions**: Manage Guild
+
+### `tickets staff remove`
+
+<CodeGroup>
+	```plaintext Syntax
+	,tickets staff remove <target>
+	```
+
+	```plaintext Example
+	,tickets staff remove @Helper
+	```
+</CodeGroup>
+
+- Remove a member or role from ticket staff.
+- **Aliases**: `rm`, `delete`
+- **Arguments**: `target`
+- **Permissions**: Manage Guild
+
+### `tickets staff add`
+
+<CodeGroup>
+	```plaintext Syntax
+	,tickets staff add <target>
+	```
+
+	```plaintext Example
+	,tickets staff add @Helper
+	```
+</CodeGroup>
+
+- Add a member or role as ticket staff.
+- **Arguments**: `target`
+- **Permissions**: Manage Guild
+
+### `tickets staff list`
+
+<CodeGroup>
+	```plaintext Syntax
+	,tickets staff list
+	```
+
+	```plaintext Example
+	,tickets staff list
+	```
+</CodeGroup>
+
+- List ticket staff members and roles.
+- **Alias**: `ls`
+- **Arguments**: None
+- **Permissions**: Manage Guild
+
+### `tickets close`
+
+<CodeGroup>
+	```plaintext Syntax
+	,tickets close
+	```
+
+	```plaintext Example
+	,tickets close
+	```
+</CodeGroup>
+
+- Close the current ticket channel.
+- **Arguments**: None
+- **Permissions**: Manage Guild
+
