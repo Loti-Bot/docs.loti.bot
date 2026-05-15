@@ -1,0 +1,199 @@
+---
+icon: star
+order: 0
+title: "Starboard"
+---
+
+### Description
+
+Promote highly-reacted messages to a starboard channel. Use the starboard commands to configure the channel, threshold, emoji, and display options for your server.
+
+<Note>
+Use `,starboard config` to review the current setup at any time.
+</Note>
+
+
+
+
+
+### Starboard unlock
+<CodeGroup>
+	```plaintext Syntax
+	,starboard unlock
+	```
+
+	```plaintext Example
+	,starboard unlock
+	```
+</CodeGroup>
+
+- Enables the starboard.
+- **Permissions**: Manage Guild
+
+### Starboard lock
+<CodeGroup>
+	```plaintext Syntax
+	,starboard lock
+	```
+
+	```plaintext Example
+	,starboard lock
+	```
+</CodeGroup>
+
+- Disables the starboard.
+- **Permissions**: Manage Guild
+
+### Starboard set
+<CodeGroup>
+	```plaintext Syntax
+	,starboard set <channel>
+	```
+
+	```plaintext Example
+	,starboard set #starboard
+	```
+</CodeGroup>
+
+- **`<channel>`**: The channel where starboard posts will be sent.
+- **Permissions**: Manage Guild
+
+### Starboard threshold
+<CodeGroup>
+	```plaintext Syntax
+	,starboard threshold <threshold>
+	```
+
+	```plaintext Example
+	,starboard threshold 15
+	```
+</CodeGroup>
+
+- **`<threshold>`**: Minimum reactions needed before a message is posted.
+- **Permissions**: Manage Guild
+
+### Starboard emoji
+<CodeGroup>
+	```plaintext Syntax
+	,starboard emoji <emoji>
+	```
+
+	```plaintext Example
+	,starboard emoji ⭐
+	```
+</CodeGroup>
+
+- **`<emoji>`**: The emoji that triggers the starboard.
+- **Permissions**: Manage Guild
+
+### Starboard color
+<CodeGroup>
+	```plaintext Syntax
+	,starboard color <color>
+	```
+
+	```plaintext Example
+	,starboard color #f5c542
+	```
+</CodeGroup>
+
+- **`<color>`**: Default embed color for starboard posts.
+- **Permissions**: Manage Guild
+
+### Starboard timestamp
+<CodeGroup>
+	```plaintext Syntax
+	,starboard timestamp <setting>
+	```
+
+	```plaintext Example
+	,starboard timestamp on
+	```
+</CodeGroup>
+
+- **`<setting>`**: Toggle whether to show sent time on starboard posts.
+- **Permissions**: Manage Guild
+
+### Starboard selfstar
+<CodeGroup>
+	```plaintext Syntax
+	,starboard selfstar <setting>
+	```
+
+	```plaintext Example
+	,starboard selfstar off
+	```
+</CodeGroup>
+
+- **`<setting>`**: Toggle whether message authors can count toward the star threshold.
+- **Permissions**: Manage Guild
+
+### Starboard attachments
+<CodeGroup>
+	```plaintext Syntax
+	,starboard attachments <setting>
+	```
+
+	```plaintext Example
+	,starboard attachments on
+	```
+</CodeGroup>
+
+- **`<setting>`**: Toggle whether attachments are shown on starboard posts.
+- **Permissions**: Manage Guild
+
+### Starboard ignore
+<CodeGroup>
+	```plaintext Syntax
+	,starboard ignore [target]
+	```
+
+	```plaintext Example
+	,starboard ignore #memes
+	```
+</CodeGroup>
+
+- **`[target]`**: Ignore a channel, member, or role for starboard reactions.
+- **Permissions**: Manage Guild
+
+### Starboard ignore list
+<CodeGroup>
+	```plaintext Syntax
+	,starboard ignore list
+	```
+
+	```plaintext Example
+	,starboard ignore list
+	```
+</CodeGroup>
+
+- Lists ignored channels, members, and roles.
+- **Permissions**: Manage Guild
+
+### Starboard config
+<CodeGroup>
+	```plaintext Syntax
+	,starboard config
+	```
+
+	```plaintext Example
+	,starboard config
+	```
+</CodeGroup>
+
+- View the current starboard settings.
+- **Permissions**: Manage Guild
+
+### Starboard reset
+<CodeGroup>
+	```plaintext Syntax
+	,starboard reset
+	```
+
+	```plaintext Example
+	,starboard reset
+	```
+</CodeGroup>
+
+- Reset all starboard settings and data for the server.
+- **Permissions**: Manage Guild

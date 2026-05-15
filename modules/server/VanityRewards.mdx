@@ -1,0 +1,150 @@
+---
+icon: link
+order: 0
+title: "Vanity Rewards"
+description: "Reward users with role(s) when they rep your server vanity."
+---
+
+
+
+### Description
+
+Reward users with role(s) when they rep your vanity. Note: assumes `,` is your server prefix or self prefix.
+
+<Warning>
+  Loti must be above the role you want to assign in the role hierarchy.
+</Warning>
+
+<Note>
+You can now use `/vanity wizard` for a simpler setup process for vanity rewards.
+</Note>
+
+### Set vanity
+<CodeGroup>
+  ```plaintext Syntax
+  ,vanity set (vanity)
+  ```
+
+  ```plaintext Example
+  ,vanity set /relate
+  ```
+</CodeGroup>
+
+- **(vanity)**: The vanity URL or keyword.
+- **Permissions**: Manage Guild, Manage Roles
+
+### Vanity channel
+<CodeGroup>
+  ```plaintext Syntax
+  ,vanity channel (channel)
+  ```
+
+  ```plaintext Example
+  ,vanity channel #/relate
+  ```
+</CodeGroup>
+
+- **(channel)**: The channel where the bot will send vanity messages.
+- **Permissions**: Manage Guild, Manage Roles
+
+### Vanity rewards add
+<CodeGroup>
+  ```plaintext Syntax
+  ,vanity rewards add (role)
+  ```
+
+  ```plaintext Example
+  ,vanity rewards add @/relate
+  ```
+</CodeGroup>
+
+- **(role)**: The role to be assigned; specify as `@role` or role ID.
+- **Permissions**: Administrator
+
+### Vanity rewards list
+<CodeGroup>
+  ```plaintext Syntax
+  ,vanity rewards list
+  ```
+
+  ```plaintext Example
+  ,vanity rewards list
+  ```
+</CodeGroup>
+
+- Displays all configured vanity rewards.
+- **Permissions**: Administrator
+
+### Vanity rewards remove
+<CodeGroup>
+  ```plaintext Syntax
+  ,vanity rewards remove (role)
+  ```
+
+  ```plaintext Example
+  ,vanity rewards remove @/relate
+  ```
+</CodeGroup>
+
+- **(role)**: Remove a vanity reward from the configured list.
+- **Permissions**: Administrator
+
+### Vanity cooldown
+<CodeGroup>
+  ```plaintext Syntax
+  ,vanity cooldown (duration)
+  ```
+
+  ```plaintext Example
+  ,vanity cooldown 5m
+  ```
+</CodeGroup>
+
+- Sets the cooldown for how often vanity messages are sent.
+- **Permissions**: Manage Guild, Manage Roles
+
+### Vanity message
+<CodeGroup>
+  ```plaintext Syntax
+  ,vanity message (message)
+  ```
+
+  ```plaintext Example
+  ,vanity message {user.mention} has been given {role.mention} for having {vanity} in their status.
+  ```
+
+  ```plaintext Example (embed)
+  ,vanity message {embed}{title: Thanks For Repping {user.name}}
+  ```
+</CodeGroup>
+
+- **(message)**: Custom message sent in the vanity channel. Supports [variables](../other/variables.mdx).
+- **Permissions**: Manage Guild, Manage Roles
+
+### Vanity settings
+<CodeGroup>
+  ```plaintext Syntax
+  ,vanity settings
+  ```
+
+  ```plaintext Example
+  ,vanity settings
+  ```
+</CodeGroup>
+
+- View the vanity configuration in a readable format.
+- **Permissions**: Manage Guild, Manage Roles
+
+### Vanity remove
+<CodeGroup>
+  ```plaintext Syntax
+  ,vanity remove
+  ```
+
+  ```plaintext Example
+  ,vanity remove
+  ```
+</CodeGroup>
+
+- Removes the vanity settings for the guild.
+- **Permissions**: Manage Guild, Manage Roles

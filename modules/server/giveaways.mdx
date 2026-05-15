@@ -1,0 +1,261 @@
+---
+icon: "party-horn"
+title: "Giveaways"
+description: "Create giveaways in your server!"
+order: 0
+---
+
+### <Icon icon="party-horn" size={32} /> Creating a Giveaway
+
+A giveaway can be created quickly with `giveaways quick` which defaults to (1 day, 1 winner), or started with full options using `giveaways start`.
+
+<CodeGroup>
+
+
+  ```plaintext Syntax
+  giveaways start <channel> <duration> <winners> <prize>
+  ```
+
+  ```plaintext Example
+  giveaways start #giveaways 3d 2 "Awesome Prize"
+  ```
+</CodeGroup>
+
+### <Icon icon="pencil" size={32} /> Editing a Giveaway
+
+<AccordionGroup>
+  <Accordion title="End the giveaway early">
+    End an active giveaway before its scheduled completion.
+
+    <CodeGroup>
+      ```plaintext Syntax
+      giveaways end <message>
+      ```
+
+      ```plaintext Example
+      giveaways end 1318805763531083800
+      ```
+    </CodeGroup>
+
+    * **Permissions**: Manage Guild
+  </Accordion>
+
+  <Accordion title="Edit the giveaway">
+    Modify details and limits of an active giveaway using the `giveaways edit` subcommands.
+
+    <CodeGroup>
+      ```plaintext Syntax
+      giveaways edit <message>
+      ```
+
+      ```plaintext Example
+      giveaways edit 1318805763531083800
+      ```
+    </CodeGroup>
+
+    * **Permissions**: Manage Guild
+  </Accordion>
+
+  <Accordion title="Reroll winners">
+    Draw new winners for an ended giveaway from the same entry pool.
+
+    <CodeGroup>
+      ```plaintext Syntax
+      giveaways reroll <message> <winners>
+      ```
+
+      ```plaintext Example
+      giveaways reroll 1318805763531083800 2
+      ```
+    </CodeGroup>
+
+    * **Permissions**: Manage Guild
+  </Accordion>
+
+  <Accordion title="Cancel a giveaway">
+    Cancel an active giveaway without drawing winners.
+
+    <CodeGroup>
+      ```plaintext Syntax
+      giveaways cancel <message>
+      ```
+
+      ```plaintext Example
+      giveaways cancel 1318805763531083800
+      ```
+    </CodeGroup>
+
+    * **Permissions**: Manage Guild
+  </Accordion>
+</AccordionGroup>
+
+### <Icon icon="gear" size={32} /> Editing the Giveaway Settings
+
+<AccordionGroup>
+  <Accordion title="Edit: duration">
+    Change when an active giveaway ends (from now).
+
+    <CodeGroup>
+      ```plaintext Syntax
+      giveaways edit duration <message> <date>
+      ```
+
+      ```plaintext Example
+      giveaways edit duration 1318805763531083800 2026-06-01T12:00:00Z
+      ```
+    </CodeGroup>
+
+    * **Permissions**: Manage Guild
+  </Accordion>
+
+  <Accordion title="Edit: requiredroles">
+    Require roles to react and enter the giveaway.
+
+    <CodeGroup>
+      ```plaintext Syntax
+      giveaways edit requiredroles <message> [roles]...
+      ```
+
+      ```plaintext Example
+      giveaways edit requiredroles 1318805763531083800 @VIP @Member
+      ```
+    </CodeGroup>
+
+    * **Permissions**: Manage Guild
+  </Accordion>
+
+  <Accordion title="Edit: age">
+    Minimum Discord account age (days) to enter.
+
+    <CodeGroup>
+      ```plaintext Syntax
+      giveaways edit age <message> [days]
+      ```
+
+      ```plaintext Example
+      giveaways edit age 1318805763531083800 7
+      ```
+    </CodeGroup>
+
+    * **Permissions**: Manage Guild
+  </Accordion>
+
+  <Accordion title="Edit: thumbnail">
+    Set the thumbnail image on the giveaway embed.
+
+    <CodeGroup>
+      ```plaintext Syntax
+      giveaways edit thumbnail <message> [url] [attachment]
+      ```
+
+      ```plaintext Example
+      giveaways edit thumbnail 1318805763531083800 https://example.com/thumb.png
+      ```
+    </CodeGroup>
+
+    * **Permissions**: Manage Guild
+  </Accordion>
+
+  <Accordion title="Edit: minlevel / maxlevel">
+    Minimum or maximum server level required to enter.
+
+    <CodeGroup>
+      ```plaintext Syntax
+      giveaways edit minlevel <message> [level]
+      giveaways edit maxlevel <message> [level]
+      ```
+
+      ```plaintext Example
+      giveaways edit minlevel 1318805763531083800 5
+      ```
+    </CodeGroup>
+
+    * **Permissions**: Manage Guild
+  </Accordion>
+
+  <Accordion title="Edit: color">
+    Set the sidebar color of the giveaway embed.
+
+    <CodeGroup>
+      ```plaintext Syntax
+      giveaways edit color <message> <color>
+      ```
+
+      ```plaintext Example
+      giveaways edit color 1318805763531083800 #FF9900
+      ```
+    </CodeGroup>
+
+    * **Permissions**: Manage Guild
+  </Accordion>
+
+  <Accordion title="Edit: winners">
+    Change how many winners are drawn when the giveaway ends.
+
+    <CodeGroup>
+      ```plaintext Syntax
+      giveaways edit winners <message> <count>
+      ```
+
+      ```plaintext Example
+      giveaways edit winners 1318805763531083800 3
+      ```
+    </CodeGroup>
+
+    * **Permissions**: Manage Guild
+  </Accordion>
+
+  <Accordion title="Edit: description / prize / host / roles / stay / image">
+    Update various giveaway fields.
+
+    <CodeGroup>
+      ```plaintext Syntax
+      giveaways edit description <message> [text]
+      giveaways edit prize <message> <prize>
+      giveaways edit host <message> [members]...
+      giveaways edit roles <message> [roles]...
+      giveaways edit stay <message> [days]
+      giveaways edit image <message> [url] [attachment]
+      ```
+
+      ```plaintext Example
+      giveaways edit prize 1318805763531083800 "New Prize"
+      ```
+    </CodeGroup>
+
+    * **Permissions**: Manage Guild
+  </Accordion>
+
+  <Accordion title="View & List">
+    View configured giveaways or list active giveaways in the server.
+
+    <CodeGroup>
+      ```plaintext Syntax
+      giveaways list
+      giveaways edit <message>  (then use subcommands to view/change)
+      ```
+
+      ```plaintext Example
+      giveaways list
+      ```
+    </CodeGroup>
+
+    * **Permissions**: Manage Guild
+  </Accordion>
+</AccordionGroup>
+
+## <Icon icon="dice" size={32} /> Rerolling a Giveaway
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,giveaway reroll (giveaway id)
+  ```
+
+  ```plaintext Example
+  ,giveaway reroll 1318805763531083800
+  ```
+</CodeGroup>
+
+## <Icon icon="gear-code" size={32} /> Getting the Giveaway ID
+
+Obtain the message ID by enabling Developer Mode in Discord, right-clicking on the message, and selecting “Copy Message ID”.

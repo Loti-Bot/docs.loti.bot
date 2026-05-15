@@ -8,7 +8,7 @@ description: "Send messages when events within the server occur."
 
 The following events can trigger a response.
 
-* `boost` - Triggered when a user **boosts** the guild.
+* `boosts` - Triggered when a user **boosts** the guild.
 
 * `welcome` - Triggered when a user **joins** the guild.
 
@@ -26,11 +26,11 @@ Setup your custom booster message.
 
 <CodeGroup>
   ```plaintext Syntax
-  ,boostmessage setup (channel) (message)
+  ,boosts add (channel) (message)
   ```
 
   ```plaintext Example
-  ,boostmessage setup #general thanks for boosting!
+  ,boosts add #general thanks for boosting!
   ```
 </CodeGroup>
 
@@ -40,15 +40,15 @@ Removes the booster message.
 
 <CodeGroup>
   ```plaintext Syntax
-  ,boostmessage remove
+  ,boosts remove #channel
   ```
 </CodeGroup>
 
-### Testing the booster message
+### view the booster message
 
 <CodeGroup>
   ```plaintext Syntax
-  ,boostmessage test
+  ,boosts view
   ```
 </CodeGroup>
 

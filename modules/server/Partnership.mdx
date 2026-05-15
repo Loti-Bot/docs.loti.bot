@@ -1,0 +1,689 @@
+---
+icon: handshake
+order: 0
+title: "Partnership"
+---
+
+
+### Description
+
+Manage partnership and affiliate managers, their setup, requirements, weekly posts, and point tracking.
+
+<Note>
+Use `,partnership wizard` for a guided step-by-step setup.
+</Note>
+
+
+
+
+
+
+### `partnership requirement`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership requirement
+  ```
+
+  ```plaintext Example
+  ,partnership requirement
+  ```
+</CodeGroup>
+
+- Set requirements that posts must meet to count.
+- **Aliases**: `req`, `requirements`
+- **Arguments**: None
+- **Permissions**: None
+
+### `partnership requirement age`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership requirement age <duration>
+  ```
+
+  ```plaintext Example
+  ,partnership requirement age 30d
+  ```
+</CodeGroup>
+
+- Minimum age of the partnered server. Use `0` to disable.
+- **Arguments**: `duration`
+- **Permissions**: None
+
+### `partnership requirement members`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership requirement members <count>
+  ```
+
+  ```plaintext Example
+  ,partnership requirement members 100
+  ```
+</CodeGroup>
+
+- Minimum member count of the partnered server. Use `0` to disable.
+- **Arguments**: `count`
+- **Permissions**: None
+
+### `partnership cooldown`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership cooldown <duration>
+  ```
+
+  ```plaintext Example
+  ,partnership cooldown 12h
+  ```
+</CodeGroup>
+
+- Per-user cooldown between credited posts. Use `0` to disable.
+- **Arguments**: `duration`
+- **Permissions**: None
+
+### `partnership blacklist`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership blacklist
+  ```
+
+  ```plaintext Example
+  ,partnership blacklist
+  ```
+</CodeGroup>
+
+- Block users from earning partnership points.
+- **Aliases**: `bl`
+- **Arguments**: None
+- **Permissions**: None
+
+### `partnership blacklist add`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership blacklist add <user> <reason>
+  ```
+
+  ```plaintext Example
+  ,partnership blacklist add @BadActor spammed fake posts
+  ```
+</CodeGroup>
+
+- Blacklist a user.
+- **Arguments**: `user`, `reason`
+- **Permissions**: None
+
+### `partnership blacklist remove`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership blacklist remove <user>
+  ```
+
+  ```plaintext Example
+  ,partnership blacklist remove @BadActor
+  ```
+</CodeGroup>
+
+- Remove a user from the blacklist.
+- **Arguments**: `user`
+- **Permissions**: None
+
+### `partnership blacklist list`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership blacklist list
+  ```
+
+  ```plaintext Example
+  ,partnership blacklist list
+  ```
+</CodeGroup>
+
+- List blacklisted users.
+- **Arguments**: None
+- **Permissions**: None
+
+### `partnership stats`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership stats
+  ```
+
+  ```plaintext Example
+  ,partnership stats
+  ```
+</CodeGroup>
+
+- Show server-wide partnership stats.
+- **Arguments**: None
+- **Permissions**: None
+
+### `partnership partner`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership partner
+  ```
+
+  ```plaintext Example
+  ,partnership partner
+  ```
+</CodeGroup>
+
+- Configure the partnership channel and bypass roles.
+- **Arguments**: None
+- **Permissions**: None
+
+### `partnership partner channel`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership partner channel <channel>
+  ```
+
+  ```plaintext Example
+  ,partnership partner channel #partnerships
+  ```
+</CodeGroup>
+
+- Set the channel where partnership posts are watched.
+- **Arguments**: `channel`
+- **Permissions**: None
+
+### `partnership partner ignore`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership partner ignore <role>
+  ```
+
+  ```plaintext Example
+  ,partnership partner ignore @PartnerTeam
+  ```
+</CodeGroup>
+
+- Toggle a role that bypasses partnership requirements.
+- **Arguments**: `role`
+- **Permissions**: None
+
+### `partnership partner ignored`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership partner ignored
+  ```
+
+  ```plaintext Example
+  ,partnership partner ignored
+  ```
+</CodeGroup>
+
+- List roles that bypass partnership requirements.
+- **Arguments**: None
+- **Permissions**: None
+
+### `partnership manager`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership manager
+  ```
+
+  ```plaintext Example
+  ,partnership manager
+  ```
+</CodeGroup>
+
+- Add, remove, and configure partnership managers.
+- **Aliases**: `managers`, `mgr`
+- **Arguments**: None
+- **Permissions**: None
+
+### `partnership manager config`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership manager config
+  ```
+
+  ```plaintext Example
+  ,partnership manager config
+  ```
+</CodeGroup>
+
+- Show the current manager configuration.
+- **Aliases**: `setup`, `view`
+- **Arguments**: None
+- **Permissions**: None
+
+### `partnership manager nickname`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership manager nickname <format>
+  ```
+
+  ```plaintext Example
+  ,partnership manager nickname [Manager] {user}
+  ```
+</CodeGroup>
+
+- Set the nickname format applied to managers. You can use placeholders like `{user}` and `{guild}`.
+- **Aliases**: `nick`
+- **Arguments**: `format`
+- **Permissions**: None
+
+### `partnership manager remove`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership manager remove <user>
+  ```
+
+  ```plaintext Example
+  ,partnership manager remove @Manager
+  ```
+</CodeGroup>
+
+- Remove a user from the partnership managers.
+- **Aliases**: `fire`
+- **Arguments**: `user`
+- **Permissions**: None
+
+### `partnership manager welcome`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership manager welcome <script>
+  ```
+
+  ```plaintext Example
+  ,partnership manager welcome Welcome {user.mention} to the team!
+  ```
+</CodeGroup>
+
+- Set the welcome script posted when a manager is hired.
+- **Arguments**: `script`
+- **Permissions**: None
+
+### `partnership manager role`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership manager role <role>
+  ```
+
+  ```plaintext Example
+  ,partnership manager role @PartnershipManager
+  ```
+</CodeGroup>
+
+- Set the role given to partnership managers.
+- **Arguments**: `role`
+- **Permissions**: None
+
+### `partnership manager add`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership manager add <user>
+  ```
+
+  ```plaintext Example
+  ,partnership manager add @Manager
+  ```
+</CodeGroup>
+
+- Hire a user as a partnership manager.
+- **Aliases**: `hire`
+- **Arguments**: `user`
+- **Permissions**: None
+
+### `partnership manager reset`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership manager reset
+  ```
+
+  ```plaintext Example
+  ,partnership manager reset
+  ```
+</CodeGroup>
+
+- Clear the entire manager configuration, including role, nickname, channel, and welcome message.
+- **Arguments**: None
+- **Permissions**: None
+
+### `partnership manager channel`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership manager channel <channel>
+  ```
+
+  ```plaintext Example
+  ,partnership manager channel #managers
+  ```
+</CodeGroup>
+
+- Set the channel where the manager welcome is posted.
+- **Arguments**: `channel`
+- **Permissions**: None
+
+### `partnership manager list`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership manager list
+  ```
+
+  ```plaintext Example
+  ,partnership manager list
+  ```
+</CodeGroup>
+
+- List all partnership managers.
+- **Arguments**: None
+- **Permissions**: None
+
+### `partnership weekly`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership weekly
+  ```
+
+  ```plaintext Example
+  ,partnership weekly
+  ```
+</CodeGroup>
+
+- Manage the weekly auto-stats post.
+- **Arguments**: None
+- **Permissions**: Manage Guild
+
+### `partnership weekly enable`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership weekly enable <channel>
+  ```
+
+  ```plaintext Example
+  ,partnership weekly enable #weekly-stats
+  ```
+</CodeGroup>
+
+- Enable the weekly stats post and set the channel if provided.
+- **Aliases**: `on`
+- **Arguments**: `channel`
+- **Permissions**: Manage Guild
+
+### `partnership weekly disable`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership weekly disable
+  ```
+
+  ```plaintext Example
+  ,partnership weekly disable
+  ```
+</CodeGroup>
+
+- Disable the weekly stats post.
+- **Aliases**: `off`
+- **Arguments**: None
+- **Permissions**: Manage Guild
+
+### `partnership weekly channel`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership weekly channel <channel>
+  ```
+
+  ```plaintext Example
+  ,partnership weekly channel #weekly-stats
+  ```
+</CodeGroup>
+
+- Set the channel for the weekly stats post.
+- **Arguments**: `channel`
+- **Permissions**: Manage Guild
+
+### `partnership leaderboard`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership leaderboard <days>
+  ```
+
+  ```plaintext Example
+  ,partnership leaderboard 7
+  ```
+</CodeGroup>
+
+- Top partnership managers in the last 7 days.
+- **Aliases**: `top`, `lb`
+- **Arguments**: `days`
+- **Permissions**: Manage Guild
+
+### `partnership info`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership info <user>
+  ```
+
+  ```plaintext Example
+  ,partnership info @Manager
+  ```
+</CodeGroup>
+
+- Show partnership stats for a user.
+- **Arguments**: `user`
+- **Permissions**: Manage Guild
+
+### `partnership affiliate`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership affiliate
+  ```
+
+  ```plaintext Example
+  ,partnership affiliate
+  ```
+</CodeGroup>
+
+- Configure the affiliate channel and bypass roles.
+- **Aliases**: `aff`
+- **Arguments**: None
+- **Permissions**: Manage Guild
+
+### `partnership affiliate ignore`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership affiliate ignore <role>
+  ```
+
+  ```plaintext Example
+  ,partnership affiliate ignore @AffiliateTeam
+  ```
+</CodeGroup>
+
+- Toggle a role that bypasses affiliate requirements.
+- **Arguments**: `role`
+- **Permissions**: Manage Guild
+
+### `partnership affiliate ignored`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership affiliate ignored
+  ```
+
+  ```plaintext Example
+  ,partnership affiliate ignored
+  ```
+</CodeGroup>
+
+- List roles that bypass affiliate requirements.
+- **Arguments**: None
+- **Permissions**: Manage Guild
+
+### `partnership affiliate channel`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership affiliate channel <channel>
+  ```
+
+  ```plaintext Example
+  ,partnership affiliate channel #affiliates
+  ```
+</CodeGroup>
+
+- Set the channel where affiliate posts are watched.
+- **Arguments**: `channel`
+- **Permissions**: Manage Guild
+
+### `partnership wizard`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership wizard
+  ```
+
+  ```plaintext Example
+  ,partnership wizard
+  ```
+</CodeGroup>
+
+- Guided step-by-step partnership setup.
+- **Arguments**: None
+- **Permissions**: Manage Guild
+
+### `partnership config`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership config
+  ```
+
+  ```plaintext Example
+  ,partnership config
+  ```
+</CodeGroup>
+
+- Show the full partnership configuration.
+- **Aliases**: `settings`, `view`
+- **Arguments**: None
+- **Permissions**: Manage Guild
+
+### `partnership reply`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership reply <script>
+  ```
+
+  ```plaintext Example
+  ,partnership reply Thanks for partnering with us, {user.mention}!
+  ```
+</CodeGroup>
+
+- Set the auto-reply posted when a partnership or affiliate is detected.
+- **Arguments**: `script`
+- **Permissions**: Manage Guild
+
+### `partnership points`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership points <user> <amount>
+  ```
+
+  ```plaintext Example
+  ,partnership points @Manager 10
+  ```
+</CodeGroup>
+
+- Adjust manager points manually.
+- **Aliases**: `point`
+- **Arguments**: `user`, `amount`
+- **Permissions**: Manage Guild
+
+### `partnership points add`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership points add <user> <amount>
+  ```
+
+  ```plaintext Example
+  ,partnership points add @Manager 5
+  ```
+</CodeGroup>
+
+- Add points to a manager.
+- **Arguments**: `user`, `amount`
+- **Permissions**: Manage Guild
+
+### `partnership points remove`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership points remove <user> <amount>
+  ```
+
+  ```plaintext Example
+  ,partnership points remove @Manager 5
+  ```
+</CodeGroup>
+
+- Remove points from a manager.
+- **Aliases**: `subtract`, `sub`
+- **Arguments**: `user`, `amount`
+- **Permissions**: Manage Guild
+
+### `partnership points set`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership points set <user> <amount>
+  ```
+
+  ```plaintext Example
+  ,partnership points set @Manager 25
+  ```
+</CodeGroup>
+
+- Set a manager's point total exactly.
+- **Arguments**: `user`, `amount`
+- **Permissions**: Manage Guild
+
+### `partnership points reset`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,partnership points reset [user]
+  ```
+
+  ```plaintext Example
+  ,partnership points reset @Manager
+  ```
+</CodeGroup>
+
+- Reset points for one user, or for everyone if no user is given.
+- **Arguments**: `user`
+- **Permissions**: Manage Guild

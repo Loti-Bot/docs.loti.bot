@@ -1,0 +1,87 @@
+---
+icon: key
+order: 0
+title: "Fake Permissions"
+---
+
+
+
+### Description
+
+Let a role use loti bot commands without real Discord perms.
+
+<Note>
+Use `,fakepermissions wizard` for a easy setup.
+</Note>
+
+### Fake permissions add
+<CodeGroup>
+  ```plaintext Syntax
+  ,fakepermissions add <role> <permission>
+  ```
+
+  ```plaintext Example
+  ,fakepermissions add @Moderators manage_messages
+  ```
+</CodeGroup>
+
+- **`<role>`**: The role to attach a fake permission to.
+- **`<permission>`**: The permission name to display as enabled.
+- **Permissions**: Administrator
+
+### Fake permissions remove
+<CodeGroup>
+  ```plaintext Syntax
+  ,fakepermissions remove <role> <permission>
+  ```
+
+  ```plaintext Example
+  ,fakepermissions remove @Moderators manage_messages
+  ```
+</CodeGroup>
+
+- **`<role>`**: The role to remove a fake permission from.
+- **`<permission>`**: The permission name to remove.
+- **Permissions**: Administrator
+
+### Fake permissions list
+<CodeGroup>
+  ```plaintext Syntax
+  ,fakepermissions list <role>
+  ```
+
+  ```plaintext Example
+  ,fakepermissions list @Moderators
+  ```
+</CodeGroup>
+
+- Displays all fake permissions configured for the selected role.
+- **Permissions**: Administrator
+
+### Fake permissions reset
+<CodeGroup>
+  ```plaintext Syntax
+  ,fakepermissions reset
+  ```
+
+  ```plaintext Example
+  ,fakepermissions reset
+  ```
+</CodeGroup>
+
+- Removes all fake permissions configured in the server.
+- **Permissions**: Administrator
+
+### Fake permissions wizard
+<CodeGroup>
+  ```plaintext Syntax
+  ,fakepermissions wizard
+  ```
+
+  ```plaintext Example
+  ,fakepermissions wizard
+  ```
+</CodeGroup>
+
+- Runs a guided setup flow for fake permissions.
+- **Permissions**: Administrator

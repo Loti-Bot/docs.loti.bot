@@ -1,77 +1,238 @@
 ---
-icon: "gear"
+icon: gear
+order: 0
 title: "Settings"
-description: "Make Loti more unique with Customizable Settings."
+description: "Configure server settings, moderation DMs, appeal tools, and language preferences."
 ---
 
-### Customize Emojis
 
-Modify emojis sent within Loti's Various Embeds
+### Description
 
-<Warning>
-  The emoji(s) used **must be accessible** by Loti or else functions may not work.
-</Warning>
+Configure server settings for Loti.
 
-<CodeGroup>
-  ```plaintext Syntax
-  ,settings emoji ('approve', 'warning', 'error', 'paginator_previous', 'paginator_next', 'paginator_pages' or 'paginator_cancel') (emoji)
-  ```
 
-  ```plaintext Example
-  ,settings emoji approve :approve:
-  ```
-</CodeGroup>
 
-### Customize Embed Colors
 
-Modify colors sent within Loti's various Embeds
+### `settings action silent`
 
 <CodeGroup>
   ```plaintext Syntax
-  ,settings color ('approve', 'warning', 'error' or 'main') (color)
+  ,settings action silent <action>
   ```
 
   ```plaintext Example
-  ,settings color approve #ffffff
+  ,settings action silent ban
   ```
 </CodeGroup>
 
-### Edit Theme
+- Toggle whether the bot silently punishes an action without sending a DM.
+- **Arguments**: `action`
+- **Permissions**: None
 
-Select a default theme for Loti to automatically use
+### `settings action message`
 
 <CodeGroup>
   ```plaintext Syntax
-  ,settings theme ('basic', 'loti' or 'dropdown')
+  ,settings action message <action> <template>
   ```
 
   ```plaintext Example
-  ,settings theme loti
+  ,settings action message ban {user.mention} was banned for breaking the rules.
   ```
 </CodeGroup>
 
-### Auto Transcribe
+- Set the DM message template for a moderation action.
+- **Arguments**: `action`, `template`
+- **Permissions**: None
 
-Toggle Automatic Transcription of Voice Messages to Text
+### `settings appeal`
 
 <CodeGroup>
   ```plaintext Syntax
-  ,settings autotranscribe (toggle)
+  ,settings appeal
   ```
 
   ```plaintext Example
-  ,settings autotranscribe on
+  ,settings appeal
   ```
 </CodeGroup>
 
-### Reset Settings
+- Configure the appeal system for this server.
+- **Arguments**: None
+- **Permissions**: None
 
-<Warning>
-  This will reset all settings to their default values
-</Warning>
+### `settings appeal disable`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,settings appeal disable
+  ```
+
+  ```plaintext Example
+  ,settings appeal disable
+  ```
+</CodeGroup>
+
+- Disable the appeal system.
+- **Arguments**: None
+- **Permissions**: None
+
+### `settings appeal enable`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,settings appeal enable
+  ```
+
+  ```plaintext Example
+  ,settings appeal enable
+  ```
+</CodeGroup>
+
+- Enable the appeal system.
+- **Arguments**: None
+- **Permissions**: None
+
+### `settings appeal channel`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,settings appeal channel <channel>
+  ```
+
+  ```plaintext Example
+  ,settings appeal channel #appeals
+  ```
+</CodeGroup>
+
+- Set the channel where appeal threads are created.
+- **Arguments**: `channel`
+- **Permissions**: None
+
+### `settings appeal role`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,settings appeal role <role>
+  ```
+
+  ```plaintext Example
+  ,settings appeal role @AppealsTeam
+  ```
+</CodeGroup>
+
+- Set the role that gets pinged when a new appeal thread is created.
+- **Arguments**: `role`
+- **Permissions**: None
+
+### `settings appeal form-add`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,settings appeal form-add <field> <type> <question> <options> <required>
+  ```
+
+  ```plaintext Example
+  ,settings appeal form-add reason text "Why were you banned?" true
+  ```
+</CodeGroup>
+
+- Add a field to the appeal form, using either a text field or a dropdown.
+- **Arguments**: `field`, `type`, `question`, `options`, `required`
+- **Permissions**: None
+
+### `settings appeal form-list`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,settings appeal form-list
+  ```
+
+  ```plaintext Example
+  ,settings appeal form-list
+  ```
+</CodeGroup>
+
+- List all configured appeal form fields.
+- **Arguments**: None
+- **Permissions**: None
+
+### `settings appeal form-disable`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,settings appeal form-disable
+  ```
+
+  ```plaintext Example
+  ,settings appeal form-disable
+  ```
+</CodeGroup>
+
+- Disable the appeal form.
+- **Arguments**: None
+- **Permissions**: None
+
+### `settings appeal form-enable`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,settings appeal form-enable
+  ```
+
+  ```plaintext Example
+  ,settings appeal form-enable
+  ```
+</CodeGroup>
+
+- Enable the appeal form.
+- **Arguments**: None
+- **Permissions**: None
+
+### `settings appeal form-remove`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,settings appeal form-remove <position>
+  ```
+
+  ```plaintext Example
+  ,settings appeal form-remove 2
+  ```
+</CodeGroup>
+
+- Remove a field from the appeal form.
+- **Arguments**: `position`
+- **Permissions**: None
+
+### `settings language`
+
+<CodeGroup>
+  ```plaintext Syntax
+  ,settings language <language>
+  ```
+
+  ```plaintext Example
+  ,settings language en
+  ```
+</CodeGroup>
+
+- Set the language the bot responds in for this server.
+- **Arguments**: `language`
+- **Permissions**: None
+
+### `settings reset`
 
 <CodeGroup>
   ```plaintext Syntax
   ,settings reset
   ```
+
+  ```plaintext Example
+  ,settings reset
+  ```
 </CodeGroup>
+
+- Reset all settings to their default values.
+- **Arguments**: None
+- **Permissions**: None

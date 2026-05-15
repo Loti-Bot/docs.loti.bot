@@ -21,26 +21,35 @@
           {
             "group": "Modules",
             "pages": [
-              "modules/vanity_roles",
-              "modules/variables",
-              "modules/embeds",
-              "modules/anti_nuke",
-              "modules/giveaways",
-              "modules/economy",
+              {
+                "group": "Server",
+                "pages": [
+                  "modules/server/VanityRewards",
+                  "modules/server/giveaways",
+                  "modules/server/Starboard",
+                  "modules/server/Partnership"
+                ]
+              },
+              {
+                "group": "Security",
+                "pages": [
+                  "modules/security/AntiNuke",
+                  "modules/security/FakePermissions"
+                ]
+              },
               {
                 "group": "Messages",
                 "pages": [
-                  "modules/messages/server_messages",
-                  "modules/messages/auto_responses",
-                  "modules/messages/ping_on_join",
-                  "modules/messages/sticky_messages"
+                  "modules/messages/ServerMessages",
+                  "modules/messages/AutoResponses",
+                  "modules/messages/StickyMessages"
                 ]
               }
             ]
           },
           {
             "group": "Other",
-            "pages": ["other/settings"]
+            "pages": ["other/embeds", "other/settings", "other/variables"]
           }
         ]
       }
@@ -48,14 +57,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Loti",
+          "anchor": "Web",
           "href": "https://loti.bot/",
           "icon": "house"
         },
         {
-          "anchor": "Support Invite",
+          "anchor": "Support",
           "href": "https://loti.bot/support",
-          "icon": "slack"
+          "icon": "discord"
         }
       ]
     }

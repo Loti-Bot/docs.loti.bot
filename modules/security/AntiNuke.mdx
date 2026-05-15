@@ -1,0 +1,244 @@
+---
+icon: shield
+order: 0
+title: "Antinuke"
+description: "Protect your server from mass destructive actions and automatically punish offending users."
+---
+
+
+
+
+### Description
+
+Antinuke protects your guild from mass channel/role/webhook/emoji deletes, mass bans/kicks, bot additions, vanity changes, and dangerous permission changes. Configure thresholds and automated responses per rule.
+
+### General Notes
+
+<Warning>
+	Loti requires Administrator for full Antinuke functionality and must be placed above roles it may need to modify.
+</Warning>
+
+* Use `,antinuke whitelist <member>` to exempt trusted members or bots from triggering protections.
+* For actions that perform many requests (emoji, role, channel changes).
+
+### `antinuke channel`
+<CodeGroup>
+	```plaintext Syntax
+	,antinuke channel <status> [threshold] [window_seconds] ["kick"|"ban"|"strip"]
+	```
+
+	```plaintext Example
+	,antinuke channel on 5 60 "strip"
+	```
+</CodeGroup>
+
+*`**status**: `on` / `off`
+* **[threshold]**: number of channel creates/deletes before triggering (default: guild specific)
+* **[window_seconds]**: time window to evaluate the threshold (seconds)
+* **action**: punishment to apply to the offender: `kick`, `ban`, or `strip` (remove roles/permissions)
+* **Permissions**: Administrator
+
+### `antinuke role`
+<CodeGroup>
+	```plaintext Syntax
+	,antinuke role <status> [threshold] [window_seconds] ["kick"|"ban"|"strip"]
+	```
+
+	```plaintext Example
+	,antinuke role on 10 120 "ban"
+	```
+</CodeGroup>
+
+* Prevents mass role deletions/creates/edits.
+* **Permissions**: Administrator
+
+### `antinuke ban`
+<CodeGroup>
+	```plaintext Syntax
+	,antinuke ban <status> [threshold] [window_seconds] ["kick"|"ban"|"strip"]
+	```
+
+	```plaintext Example
+	,antinuke ban on 3 30 "ban"
+	```
+</CodeGroup>
+
+* Watches for mass member bans and reacts according to configured action.
+* **Permissions**: Administrator
+
+### `antinuke botadd`
+<CodeGroup>
+	```plaintext Syntax
+	,antinuke botadd <status>
+	```
+
+	```plaintext Example
+	,antinuke botadd on
+	```
+</CodeGroup>
+
+* **status**: `on` / `off` — prevents unauthorized bot additions.
+* **Permissions**: Administrator
+
+### `antinuke webhook`
+<CodeGroup>
+	```plaintext Syntax
+	,antinuke webhook <status> [threshold] [window_seconds] ["kick"|"ban"|"strip"]
+	```
+
+	```plaintext Example
+	,antinuke webhook on 10 60 "strip"
+	```
+</CodeGroup>
+
+* **Permissions**: Administrator
+
+### `antinuke list`
+<CodeGroup>
+	```plaintext Syntax
+	,antinuke list
+	```
+
+	```plaintext Example
+	,antinuke list
+	```
+</CodeGroup>
+
+* View all enabled antinuke modules, plus whitelisted members and bots.
+* **Permissions**: Manage Guild
+
+### `antinuke wizard`
+<CodeGroup>
+	```plaintext Syntax
+	,antinuke wizard
+	```
+
+	```plaintext Example
+	,antinuke wizard
+	```
+</CodeGroup>
+
+* Guided step-by-step setup for recommended Antinuke settings.
+* **Permissions**: Administrator
+
+### `antinuke vanity`
+<CodeGroup>
+	```plaintext Syntax
+	,antinuke vanity <status> ["kick"|"ban"|"strip"]
+	```
+
+	```plaintext Example
+	,antinuke vanity on "strip"
+	```
+</CodeGroup>
+
+* Punishes users who change the server vanity URL.
+* **Permissions**: Manage Guild
+
+### `antinuke whitelist`
+<CodeGroup>
+	```plaintext Syntax
+	,antinuke whitelist <member>
+	```
+
+	```plaintext Example
+	,antinuke whitelist @TrustedUser
+	```
+</CodeGroup>
+
+* Whitelist a member so they won't trigger Antinuke protections, or whitelist a bot to allow it to join.
+* **Permissions**: Administrator
+
+### `antinuke kick`
+<CodeGroup>
+	```plaintext Syntax
+	,antinuke kick <status> [threshold] [window_seconds] ["kick"|"ban"|"strip"]
+	```
+
+	```plaintext Example
+	,antinuke kick on 5 30 "ban"
+	```
+</CodeGroup>
+
+* Watches for mass member kicks.
+* **Permissions**: Administrator
+
+### `antinuke permissions`
+<CodeGroup>
+	```plaintext Syntax
+	,antinuke permissions <"grant"|"remove"|"both"> <permission> ["kick"|"ban"|"strip"]
+	```
+
+	```plaintext Example
+	,antinuke permissions grant Administrator "ban"
+	```
+</CodeGroup>
+
+* Monitors dangerous permission grants/removals and reacts with the configured punitive action.
+* **Permissions**: Administrator
+
+### `antinuke config`
+<CodeGroup>
+	```plaintext Syntax
+	,antinuke config
+	```
+
+	```plaintext Example
+	,antinuke config
+	```
+</CodeGroup>
+
+* Displays current Antinuke configuration for the server.
+* **Permissions**: Manage Guild
+
+### `antinuke emoji`
+<CodeGroup>
+	```plaintext Syntax
+	,antinuke emoji <status> [threshold] [window_seconds] ["kick"|"ban"|"strip"]
+	```
+
+	```plaintext Example
+	,antinuke emoji on 20 120 "strip"
+	```
+</CodeGroup>
+
+* May be unstable due to Discord rate limits when many emoji operations occur.
+* **Permissions**: Manage Emojis and Stickers, Manage Guild
+
+### `antinuke admins`
+<CodeGroup>
+	```plaintext Syntax
+	,antinuke admins
+	```
+
+	```plaintext Example
+	,antinuke admins
+	```
+</CodeGroup>
+
+* View all users who can manage Antinuke settings.
+* **Permissions**: Manage Guild
+
+### `antinuke admin`
+<CodeGroup>
+	```plaintext Syntax
+	,antinuke admin <member>
+	```
+
+	```plaintext Example
+	,antinuke admin @Moderator
+	```
+</CodeGroup>
+
+* Grant a user permission to edit Antinuke settings without giving full guild Administrator.
+* **Permissions**: Administrator
+
+### Parameters (common)
+
+- **(required)** status: `on` or `off`
+- **[threshold]**: The number of events before Antinuke triggers.
+- **[window_seconds]**: The time window (in seconds) during which the threshold is measured.
+- **action**: One of `kick`, `ban`, `strip` — what to do to the offending account.
+
+If you need help configuring Antinuke safely, use `,antinuke wizard` or contact the server owner.
+
